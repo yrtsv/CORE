@@ -1,0 +1,40 @@
+project:
+  type: website
+  output-dir: ../docs
+
+website:
+  title: "CORE"
+  description: "Corporate Entity Resolution Engine"
+  
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: installation.qmd
+        text: Installation
+      - href: philosophy.qmd
+        text: Philosophy
+      - href: architecture.qmd
+        text: Architecture
+      - href: workflow.qmd
+        text: Workflow
+      - href: methodology.qmd
+        text: Methodology
+      - href: tutorials.qmd
+        text: Tutorials
+      - href: news.qmd
+        text: News
+
+    right:
+      - icon: github
+        href: https://github.com/yrtsv/CORE
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    code-copy: true
+    code-overflow: wrap
+
+execute:
+  freeze: auto

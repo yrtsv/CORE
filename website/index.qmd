@@ -1,0 +1,44 @@
+---
+title: "Corporate Entity Resolution Engine (CORE)"
+page-layout: full
+---
+
+# Corporate Entity Resolution Engine (CORE)
+
+## Transparent. Reviewable. Reproducible. Cumulative.
+
+CORE is an open research software framework designed to support transparent, reviewable, reproducible, and cumulative entity resolution in empirical research.
+
+Rather than treating entity resolution as a disposable data-cleaning task, CORE treats entity resolution as a scientific process in which computational methods, expert judgement, and validated knowledge work together to produce trustworthy analytical datasets.
+
+## Core Principles
+
+- Transparency
+- Reproducibility
+- Reviewability
+- Knowledge Preservation
+
+## Framework Components
+
+- Entity Resolution Engine
+- Review Queue
+- Learning Layer
+- Scientific Workflow
+- Research Software Infrastructure
+
+## Documentation
+
+The current documentation includes:
+
+- Philosophy
+- Architecture
+- Workflow
+- Review Queue
+- Learning Layer
+- Methodology
+
+## Source Code
+
+GitHub Repository:
+
+https://github.com/yrtsv/CORE
