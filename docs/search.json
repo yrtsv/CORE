@@ -25,7 +25,7 @@
     "href": "index.html",
     "title": "Corporate Entity Resolution Engine (CORE)",
     "section": "",
-    "text": "CORE is an open research software framework designed to support transparent, reviewable, reproducible, and cumulative entity resolution in empirical research.\nRather than treating entity resolution as a disposable data-cleaning task, CORE treats entity resolution as a scientific process in which computational methods, expert judgement, and validated knowledge work together to produce trustworthy analytical datasets.\n\n\n\n\nTransparency\nReproducibility\nReviewability\nKnowledge Preservation\n\n\n\n\n\nEntity Resolution Engine\nReview Queue\nLearning Layer\nScientific Workflow\nResearch Software Infrastructure\n\n\n\n\nThe current documentation includes:\n\nPhilosophy\nArchitecture\nWorkflow\nReview Queue\nLearning Layer\nMethodology\n\n\n\n\nGitHub Repository:\nhttps://github.com/yrtsv/CORE"
+    "text": "CORE is an open research software framework designed to support transparent, reviewable, reproducible, and cumulative entity resolution in empirical research.\nRather than treating entity resolution as a disposable data-cleaning task, CORE treats entity resolution as a scientific process in which computational methods, expert judgement, and validated knowledge work together to produce trustworthy analytical datasets."
   },
   {
     "objectID": "index.html#transparent.-reviewable.-reproducible.-cumulative.",
@@ -38,29 +38,29 @@
     "objectID": "index.html#core-principles",
     "href": "index.html#core-principles",
     "title": "Corporate Entity Resolution Engine (CORE)",
-    "section": "",
-    "text": "Transparency\nReproducibility\nReviewability\nKnowledge Preservation"
+    "section": "Core Principles",
+    "text": "Core Principles\n\nTransparency\nReproducibility\nReviewability\nKnowledge Preservation"
   },
   {
     "objectID": "index.html#framework-components",
     "href": "index.html#framework-components",
     "title": "Corporate Entity Resolution Engine (CORE)",
-    "section": "",
-    "text": "Entity Resolution Engine\nReview Queue\nLearning Layer\nScientific Workflow\nResearch Software Infrastructure"
+    "section": "Framework Components",
+    "text": "Framework Components\n\nEntity Resolution Engine\nReview Queue\nLearning Layer\nScientific Workflow\nResearch Software Infrastructure"
   },
   {
     "objectID": "index.html#documentation",
     "href": "index.html#documentation",
     "title": "Corporate Entity Resolution Engine (CORE)",
-    "section": "",
-    "text": "The current documentation includes:\n\nPhilosophy\nArchitecture\nWorkflow\nReview Queue\nLearning Layer\nMethodology"
+    "section": "Documentation",
+    "text": "Documentation\nThe current documentation includes:\n\nPhilosophy\nArchitecture\nWorkflow\nReview Queue\nLearning Layer\nMethodology"
   },
   {
     "objectID": "index.html#source-code",
     "href": "index.html#source-code",
     "title": "Corporate Entity Resolution Engine (CORE)",
-    "section": "",
-    "text": "GitHub Repository:\nhttps://github.com/yrtsv/CORE"
+    "section": "Source Code",
+    "text": "Source Code\nGitHub Repository:\nhttps://github.com/yrtsv/CORE"
   },
   {
     "objectID": "architecture.html",

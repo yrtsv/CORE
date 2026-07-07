@@ -3,8 +3,6 @@ title: "Corporate Entity Resolution Engine (CORE)"
 page-layout: full
 ---
 
-# Corporate Entity Resolution Engine (CORE)
-
 ## Transparent. Reviewable. Reproducible. Cumulative.
 
 CORE is an open research software framework designed to support transparent, reviewable, reproducible, and cumulative entity resolution in empirical research.
