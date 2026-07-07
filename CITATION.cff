@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+
+title: "Corporate Entity Resolution Engine (CORE)"
+
+message: >
+  If you use CORE in your research,
+  please cite this software using the metadata below.
+
+type: software
+
+authors:
+  - family-names: "Uymaz"
+    given-names: "Yurtsev"
+    email: "y.uymaz@uea.ac.uk"
+    orcid: "https://orcid.org/0000-0002-1050-7388"
+
+version: "1.0.0"
+
+date-released: "2026-07-05"
+
+license: "MIT"
+
+repository-code: "https://github.com/YurtsevUymaz/CORE"
+
+url: "https://github.com/YurtsevUymaz/CORE"
+
+keywords:
+  - corporate entity resolution
+  - company name matching
+  - record linkage
+  - entity matching
+  - research software
+  - reproducible research
+
+abstract: >
+  CORE is a modular research software framework for
+  corporate entity resolution and company name matching.
+  It provides reproducible workflows for cleaning company
+  names, candidate generation, similarity scoring,
+  manual review, learning-based decision reuse,
+  and export of reproducible, analysis-ready datasets.

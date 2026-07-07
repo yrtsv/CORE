@@ -1,0 +1,137 @@
+<svg width="1200" height="620" viewBox="0 0 1200 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">CORE Hero Figure</title>
+  <desc id="desc">A conceptual diagram showing independent data sources entering the CORE framework, producing transparent entity resolution, expert review, knowledge preservation, analysis-ready research data, and reusable scientific knowledge.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#EEF4F8"/>
+    </linearGradient>
+
+    <linearGradient id="coreGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#123C69"/>
+      <stop offset="100%" stop-color="#0B2545"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#0B2545" flood-opacity="0.16"/>
+    </filter>
+
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#49657D"/>
+    </marker>
+
+    <style>
+      .title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; font-size: 38px; font-weight: 800; fill: #0B2545; }
+      .subtitle { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; font-size: 17px; fill: #49657D; }
+      .section { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; font-size: 15px; font-weight: 700; letter-spacing: .04em; fill: #49657D; }
+      .boxTitle { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; font-size: 18px; font-weight: 750; fill: #0B2545; }
+      .boxText { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; font-size: 13px; fill: #49657D; }
+      .coreTitle { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; font-size: 28px; font-weight: 850; fill: white; }
+      .coreText { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; font-size: 14px; fill: #DCE8F2; }
+      .coreTextSmall { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; font-size: 13px; fill: #DCE8F2; }
+      .pillText { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; font-size: 13px; font-weight: 650; fill: #0B2545; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="620" rx="28" fill="url(#bg)"/>
+
+  <text x="600" y="56" text-anchor="middle" class="title">Corporate Entity Resolution Engine</text>
+  <text x="600" y="86" text-anchor="middle" class="subtitle">Transparent • Reviewable • Reproducible • Cumulative</text>
+
+  <text x="120" y="137" class="section">Independent Data Sources</text>
+  <text x="512" y="137" class="section">CORE Framework</text>
+  <text x="910" y="137" class="section">Research Outputs</text>
+
+  <!-- Input boxes -->
+  <g filter="url(#shadow)">
+    <rect x="70" y="160" width="220" height="82" rx="18" fill="#FFFFFF" stroke="#D7E1EA" stroke-width="1.5"/>
+    <text x="180" y="192" text-anchor="middle" class="boxTitle">Reference Data</text>
+    <text x="180" y="218" text-anchor="middle" class="boxText">Validated entity records</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="70" y="270" width="220" height="82" rx="18" fill="#FFFFFF" stroke="#D7E1EA" stroke-width="1.5"/>
+    <text x="180" y="302" text-anchor="middle" class="boxTitle">Target Data</text>
+    <text x="180" y="328" text-anchor="middle" class="boxText">Names requiring resolution</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="70" y="380" width="220" height="82" rx="18" fill="#FFFFFF" stroke="#D7E1EA" stroke-width="1.5"/>
+    <text x="180" y="412" text-anchor="middle" class="boxTitle">Dictionaries</text>
+    <text x="180" y="438" text-anchor="middle" class="boxText">Suffixes, aliases, rules</text>
+  </g>
+
+  <!-- Arrows to CORE -->
+  <line x1="300" y1="201" x2="425" y2="270" stroke="#49657D" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="300" y1="311" x2="425" y2="311" stroke="#49657D" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="300" y1="421" x2="425" y2="352" stroke="#49657D" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- CORE central box -->
+  <g filter="url(#shadow)">
+    <rect x="420" y="205" width="360" height="210" rx="26" fill="url(#coreGrad)"/>
+    <text x="600" y="252" text-anchor="middle" class="coreTitle">CORE</text>
+    <text x="600" y="281" text-anchor="middle" class="coreText">Corporate Entity Resolution Engine</text>
+
+    <rect x="475" y="310" width="250" height="42" rx="18" fill="#FFFFFF" opacity="0.14"/>
+    <text x="600" y="328" text-anchor="middle" class="coreTextSmall">Clean • Tokenize</text>
+    <text x="600" y="345" text-anchor="middle" class="coreTextSmall">Generate Candidates</text>
+
+    <rect x="475" y="360" width="250" height="42" rx="18" fill="#FFFFFF" opacity="0.14"/>
+    <text x="600" y="378" text-anchor="middle" class="coreTextSmall">Score • Explain</text>
+    <text x="600" y="395" text-anchor="middle" class="coreTextSmall">Preserve Uncertainty</text>
+  </g>
+
+  <!-- Process boxes under CORE -->
+  <g filter="url(#shadow)">
+    <rect x="370" y="465" width="215" height="70" rx="18" fill="#EAF3FB" stroke="#C7DAEA" stroke-width="1.5"/>
+    <text x="477.5" y="493" text-anchor="middle" class="boxTitle">Review Queue</text>
+    <text x="477.5" y="518" text-anchor="middle" class="boxText">Expert scientific judgement</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="615" y="465" width="215" height="70" rx="18" fill="#EAF7EF" stroke="#C9E3D2" stroke-width="1.5"/>
+    <text x="722.5" y="493" text-anchor="middle" class="boxTitle">Learning Layer</text>
+    <text x="722.5" y="518" text-anchor="middle" class="boxText">Validated decision reuse</text>
+  </g>
+
+  <line x1="560" y1="416" x2="505" y2="456" stroke="#49657D" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="640" y1="416" x2="695" y2="456" stroke="#49657D" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Outputs -->
+  <g filter="url(#shadow)">
+    <rect x="890" y="210" width="265" height="102" rx="20" fill="#FFFFFF" stroke="#D7E1EA" stroke-width="1.5"/>
+    <circle cx="922" cy="261" r="15" fill="#EAF3FB" stroke="#C7DAEA"/>
+    <path d="M914 261 L920 267 L932 254" fill="none" stroke="#123C69" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="952" y="247" text-anchor="start" class="boxTitle">Analysis-Ready</text>
+    <text x="952" y="272" text-anchor="start" class="boxText">Matched research</text>
+    <text x="952" y="289" text-anchor="start" class="boxText">datasets</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="890" y="350" width="265" height="102" rx="20" fill="#FFFFFF" stroke="#D7E1EA" stroke-width="1.5"/>
+    <circle cx="922" cy="401" r="15" fill="#EAF7EF" stroke="#C9E3D2"/>
+    <path d="M914 401 L920 407 L932 394" fill="none" stroke="#1F7A4D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="952" y="387" text-anchor="start" class="boxTitle">Reusable Knowledge</text>
+    <text x="952" y="412" text-anchor="start" class="boxText">Preserved scientific</text>
+    <text x="952" y="429" text-anchor="start" class="boxText">judgement</text>
+  </g>
+
+  <line x1="780" y1="285" x2="880" y2="253" stroke="#49657D" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="830" y1="500" x2="880" y2="410" stroke="#49657D" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Footer pills -->
+  <g>
+    <rect x="325" y="570" width="130" height="28" rx="14" fill="#FFFFFF" stroke="#D7E1EA"/>
+    <text x="390" y="589" text-anchor="middle" class="pillText">Transparent</text>
+
+    <rect x="470" y="570" width="120" height="28" rx="14" fill="#FFFFFF" stroke="#D7E1EA"/>
+    <text x="530" y="589" text-anchor="middle" class="pillText">Reviewable</text>
+
+    <rect x="605" y="570" width="135" height="28" rx="14" fill="#FFFFFF" stroke="#D7E1EA"/>
+    <text x="672.5" y="589" text-anchor="middle" class="pillText">Reproducible</text>
+
+    <rect x="755" y="570" width="120" height="28" rx="14" fill="#FFFFFF" stroke="#D7E1EA"/>
+    <text x="815" y="589" text-anchor="middle" class="pillText">Cumulative</text>
+  </g>
+</svg>

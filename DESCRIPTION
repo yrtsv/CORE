@@ -1,0 +1,41 @@
+Package: corematch
+Type: Package
+Title: Corporate Entity Resolution Engine for Research-Grade Company Name Matching
+Version: 1.0.0
+Authors@R:
+    person(
+      given = "Yurtsev",
+      family = "Uymaz",
+      email = "y.uymaz@uea.ac.uk",
+      role = c("aut", "cre")
+    )
+Description: CORE is a modular research software framework for
+    corporate entity resolution. It provides reproducible workflows
+    for cleaning company names, suffix normalization, alias handling,
+    candidate generation, similarity scoring, manual review,
+    learning-based decision reuse, and export of reproducible,
+    analysis-ready matched datasets.
+License: MIT + file LICENSE
+URL: https://github.com/YurtsevUymaz/CORE
+BugReports: https://github.com/YurtsevUymaz/CORE/issues
+Encoding: UTF-8
+LazyData: true
+Imports:
+    bslib,
+    cli,
+    data.table,
+    digest,
+    dplyr,
+    fs,
+    haven,
+    jsonlite,
+    logger,
+    openxlsx,
+    readxl,
+    shiny,
+    stringi,
+    yaml
+Suggests:
+    testthat
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2

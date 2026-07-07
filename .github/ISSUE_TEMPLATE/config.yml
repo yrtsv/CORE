@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+
+contact_links:
+  - name: Documentation
+    url: https://github.com/YurtsevUymaz/CORE/tree/main/docs
+    about: Please consult the documentation before opening an issue.
+
+  - name: Citation Information
+    url: https://github.com/YurtsevUymaz/CORE/blob/main/CITATION.cff
+    about: Information on how to cite CORE in academic research.
+
+  - name: Project Discussions
+    url: https://github.com/YurtsevUymaz/CORE/discussions
+    about: Use GitHub Discussions for general questions and research ideas.

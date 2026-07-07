@@ -1,0 +1,48 @@
+# ==========================================================
+# CORE - Git Ignore
+# ==========================================================
+
+# R session files
+.Rhistory
+.RData
+.Ruserdata
+
+# RStudio
+.Rproj.user/
+
+# Logs
+logs/
+*.log
+
+# Outputs
+output/
+outputs/
+exports/
+results/
+
+# Raw and processed data
+data/raw/
+data/processed/
+
+# Reference data (keep only example/test datasets)
+data/reference/*
+!data/reference/.gitkeep
+!data/reference/example*
+!data/reference/test*
+
+# Temporary files
+*.tmp
+*.temp
+
+# Package build
+*.tar.gz
+*.Rcheck/
+
+# Environment
+.Renviron
+.env
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini

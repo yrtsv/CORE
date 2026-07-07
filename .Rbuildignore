@@ -1,0 +1,12 @@
+^data/raw$
+^data/processed$
+^logs$
+^output$
+^docs$
+^app$
+^www$
+^tests$
+^README\.md$
+^\.github$
+^.*\.Rproj$
+^\.Rproj\.user$

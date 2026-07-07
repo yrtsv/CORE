@@ -1,0 +1,7 @@
+"suffix","canonical_suffix","country","language","active","notes"
+"Ltd","Limited","UK","English",TRUE,""
+"Limited","Limited","UK","English",TRUE,""
+"PLC","Public Limited Company","UK","English",TRUE,""
+"Inc","Incorporated","US","English",TRUE,""
+"Corp","Corporation","US","English",TRUE,""
+"LLC","Limited Liability Company","US","English",TRUE,""
