@@ -4,28 +4,28 @@
     "href": "workflow.html",
     "title": "Workflow",
     "section": "",
-    "text": "Documentation under development."
+    "text": "Workflow\nDocumentation under development."
   },
   {
     "objectID": "philosophy.html",
     "href": "philosophy.html",
     "title": "Philosophy",
     "section": "",
-    "text": "Documentation under development."
+    "text": "Philosophy\nDocumentation under development."
   },
   {
     "objectID": "methodology.html",
     "href": "methodology.html",
     "title": "Methodology",
     "section": "",
-    "text": "Documentation under development."
+    "text": "Methodology\nDocumentation under development."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Corporate Entity Resolution Engine (CORE)",
     "section": "",
-    "text": "CORE is an open research software framework designed to support transparent, reviewable, reproducible, and cumulative entity resolution in empirical research.\nRather than treating entity resolution as a disposable data-cleaning task, CORE treats entity resolution as a scientific process in which computational methods, expert judgement, and validated knowledge work together to produce trustworthy analytical datasets."
+    "text": "CORE is an open research software framework designed to support transparent, reviewable, reproducible, and cumulative entity resolution in empirical research.\nRather than treating entity resolution as a disposable data-cleaning task, CORE treats entity resolution as a scientific process in which computational methods, expert judgement, and validated knowledge work together to produce trustworthy analytical datasets.\n\n\n\n\nTransparency\nReproducibility\nReviewability\nKnowledge Preservation\n\n\n\n\n\nEntity Resolution Engine\nReview Queue\nLearning Layer\nScientific Workflow\nResearch Software Infrastructure\n\n\n\n\nThe current documentation includes:\n\nPhilosophy\nArchitecture\nWorkflow\nReview Queue\nLearning Layer\nMethodology\n\n\n\n\nGitHub Repository:\nhttps://github.com/yrtsv/CORE"
   },
   {
     "objectID": "index.html#transparent.-reviewable.-reproducible.-cumulative.",
@@ -38,56 +38,56 @@
     "objectID": "index.html#core-principles",
     "href": "index.html#core-principles",
     "title": "Corporate Entity Resolution Engine (CORE)",
-    "section": "Core Principles",
-    "text": "Core Principles\n\nTransparency\nReproducibility\nReviewability\nKnowledge Preservation"
+    "section": "",
+    "text": "Transparency\nReproducibility\nReviewability\nKnowledge Preservation"
   },
   {
     "objectID": "index.html#framework-components",
     "href": "index.html#framework-components",
     "title": "Corporate Entity Resolution Engine (CORE)",
-    "section": "Framework Components",
-    "text": "Framework Components\n\nEntity Resolution Engine\nReview Queue\nLearning Layer\nScientific Workflow\nResearch Software Infrastructure"
+    "section": "",
+    "text": "Entity Resolution Engine\nReview Queue\nLearning Layer\nScientific Workflow\nResearch Software Infrastructure"
   },
   {
     "objectID": "index.html#documentation",
     "href": "index.html#documentation",
     "title": "Corporate Entity Resolution Engine (CORE)",
-    "section": "Documentation",
-    "text": "Documentation\nThe current documentation includes:\n\nPhilosophy\nArchitecture\nWorkflow\nReview Queue\nLearning Layer\nMethodology"
+    "section": "",
+    "text": "The current documentation includes:\n\nPhilosophy\nArchitecture\nWorkflow\nReview Queue\nLearning Layer\nMethodology"
   },
   {
     "objectID": "index.html#source-code",
     "href": "index.html#source-code",
     "title": "Corporate Entity Resolution Engine (CORE)",
-    "section": "Source Code",
-    "text": "Source Code\nGitHub Repository:\nhttps://github.com/yrtsv/CORE"
+    "section": "",
+    "text": "GitHub Repository:\nhttps://github.com/yrtsv/CORE"
   },
   {
     "objectID": "architecture.html",
     "href": "architecture.html",
     "title": "Architecture",
     "section": "",
-    "text": "Documentation under development."
+    "text": "Architecture\nDocumentation under development."
   },
   {
     "objectID": "installation.html",
     "href": "installation.html",
     "title": "Installation",
     "section": "",
-    "text": "Documentation under development."
+    "text": "Installation\nDocumentation under development."
   },
   {
     "objectID": "news.html",
     "href": "news.html",
     "title": "News",
     "section": "",
-    "text": "Documentation under development."
+    "text": "News\nDocumentation under development."
   },
   {
     "objectID": "tutorials.html",
     "href": "tutorials.html",
     "title": "Tutorials",
     "section": "",
-    "text": "Documentation under development."
+    "text": "Tutorials\nDocumentation under development."
   }
 ]

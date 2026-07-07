@@ -1,7 +1,4 @@
 ---
 title: "News"
 ---
-
-# News
-
 Documentation under development.

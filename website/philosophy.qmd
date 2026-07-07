@@ -1,7 +1,4 @@
 ---
 title: "Philosophy"
 ---
-
-# Philosophy
-
 Documentation under development.
