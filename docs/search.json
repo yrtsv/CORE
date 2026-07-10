@@ -382,7 +382,28 @@
     "href": "installation.html",
     "title": "Installation",
     "section": "",
-    "text": "This page explains how to install and configure CORE.\nCORE is distributed as an open-source research software framework and can be installed directly from the GitHub repository.\n\n\nRequirements\nCORE currently requires:\n\nR (&gt;= 4.3 recommended)\nRStudio (recommended)\nGit\nInternet access for package installation\n\nThe framework has been developed and tested on Windows, Linux, and macOS.\n\n\n\nStep 1 — Clone the Repository\nClone the repository from GitHub:\n```bash git clone https://github.com/yrtsv/CORE.git"
+    "text": "This page explains how to install and configure CORE.\nCORE is distributed as an open-source research software framework and can be installed directly from the GitHub repository."
+  },
+  {
+    "objectID": "installation.html#package-installation-failures",
+    "href": "installation.html#package-installation-failures",
+    "title": "Installation",
+    "section": "Package installation failures",
+    "text": "Package installation failures\nRe-run:\nsource(\"R/01_install_packages.R\")\nand verify your internet connection."
+  },
+  {
+    "objectID": "installation.html#shiny-application-does-not-launch",
+    "href": "installation.html#shiny-application-does-not-launch",
+    "title": "Installation",
+    "section": "Shiny application does not launch",
+    "text": "Shiny application does not launch\nRun:\nshiny::runApp(\n  appDir = \"app\",\n  launch.browser = TRUE\n)\nIf necessary:\noptions(shiny.launch.browser = TRUE)"
+  },
+  {
+    "objectID": "installation.html#project-root-issues",
+    "href": "installation.html#project-root-issues",
+    "title": "Installation",
+    "section": "Project-root issues",
+    "text": "Project-root issues\nEnsure that:\n\nthe complete repository was cloned;\nthe project is opened as an R Project;\nrelative paths remain unchanged.\n\nCORE assumes a stable project structure."
   },
   {
     "objectID": "news.html",

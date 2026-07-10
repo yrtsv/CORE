@@ -28,3 +28,232 @@ Clone the repository from GitHub:
 
 ```bash
 git clone https://github.com/yrtsv/CORE.git
+```
+
+Move into the project directory:
+
+```bash
+cd CORE
+```
+
+---
+
+# Step 2 — Open the Project
+
+Open the project in RStudio:
+
+```text
+CompanyMatchingEngine.Rproj
+```
+
+Using an R Project is strongly recommended because CORE relies on a stable project-root structure.
+
+---
+
+# Step 3 — Install Required Packages
+
+Install all required packages:
+
+```r
+source("R/01_install_packages.R")
+```
+
+This script installs the package dependencies required by the framework.
+
+---
+
+# Step 4 — Load the CORE Environment
+
+Load the required packages and initialise the environment:
+
+```r
+source("R/02_load_packages.R")
+```
+
+After successful execution, CORE is ready for use.
+
+---
+
+# Step 5 — Verify the Installation
+
+Load the main CORE workflow:
+
+```r
+source("R/workflow/18_run_core.R")
+```
+
+If no errors occur, the installation has completed successfully.
+
+---
+
+# Running the Shiny Demonstrator
+
+CORE includes an interactive Shiny demonstrator.
+
+Launch the demonstrator from the project root:
+
+```r
+options(shiny.launch.browser = TRUE)
+
+shiny::runApp(
+  appDir = "app",
+  host = "127.0.0.1",
+  port = 3838,
+  launch.browser = TRUE
+)
+```
+
+The demonstrator uses the actual CORE workflow rather than a simplified example implementation.
+
+A public version is also available:
+
+<https://corematch.shinyapps.io/core/>
+
+---
+
+# Demonstration Mode
+
+Demonstration Mode automatically loads bundled example datasets and executes the CORE pipeline.
+
+This mode is recommended for first-time users.
+
+It includes:
+
+- data preparation;
+- entity resolution;
+- candidate generation;
+- similarity scoring;
+- review queue creation;
+- diagnostics;
+- review-history display.
+
+---
+
+# Research Mode
+
+Research Mode allows users to execute CORE using their own datasets.
+
+Users provide:
+
+- an employer dataset (`csv`);
+- a reference dataset (`csv`).
+
+The first column of each dataset is interpreted as the company-name variable.
+
+Example employer dataset:
+
+| company |
+|---------|
+| TESLA MOTORS |
+| APPLE INC |
+| MICROSOFT CORP |
+
+Example reference dataset:
+
+| company_name |
+|--------------|
+| TESLA |
+| APPLE INC |
+| MICROSOFT CORPORATION |
+
+---
+
+# Project Structure
+
+A typical installation contains the following structure:
+
+```text
+CORE/
+├── app/
+├── assets/
+├── docs/
+├── inst/
+├── R/
+├── website/
+├── DESCRIPTION
+├── LICENSE
+├── NEWS.md
+├── README.md
+└── CITATION.cff
+```
+
+---
+
+# Updating CORE
+
+To update an existing installation:
+
+```bash
+git pull origin main
+```
+
+After updating, reinstall any newly required packages:
+
+```r
+source("R/01_install_packages.R")
+```
+
+---
+
+# Troubleshooting
+
+## Package installation failures
+
+Re-run:
+
+```r
+source("R/01_install_packages.R")
+```
+
+and verify your internet connection.
+
+---
+
+## Shiny application does not launch
+
+Run:
+
+```r
+shiny::runApp(
+  appDir = "app",
+  launch.browser = TRUE
+)
+```
+
+If necessary:
+
+```r
+options(shiny.launch.browser = TRUE)
+```
+
+---
+
+## Project-root issues
+
+Ensure that:
+
+- the complete repository was cloned;
+- the project is opened as an R Project;
+- relative paths remain unchanged.
+
+CORE assumes a stable project structure.
+
+---
+
+# Next Steps
+
+After installation, the recommended reading order is:
+
+```text
+Philosophy
+    ↓
+Architecture
+    ↓
+Workflow
+    ↓
+Methodology
+    ↓
+Tutorials
+```
+
+New users are strongly encouraged to begin with the Shiny Demonstrator before applying CORE to large empirical datasets.

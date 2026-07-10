@@ -23,6 +23,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -156,6 +191,22 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#requirements" id="toc-requirements" class="nav-link active" data-scroll-target="#requirements">Requirements</a></li>
   <li><a href="#step-1-clone-the-repository" id="toc-step-1-clone-the-repository" class="nav-link" data-scroll-target="#step-1-clone-the-repository">Step 1 — Clone the Repository</a></li>
+  <li><a href="#step-2-open-the-project" id="toc-step-2-open-the-project" class="nav-link" data-scroll-target="#step-2-open-the-project">Step 2 — Open the Project</a></li>
+  <li><a href="#step-3-install-required-packages" id="toc-step-3-install-required-packages" class="nav-link" data-scroll-target="#step-3-install-required-packages">Step 3 — Install Required Packages</a></li>
+  <li><a href="#step-4-load-the-core-environment" id="toc-step-4-load-the-core-environment" class="nav-link" data-scroll-target="#step-4-load-the-core-environment">Step 4 — Load the CORE Environment</a></li>
+  <li><a href="#step-5-verify-the-installation" id="toc-step-5-verify-the-installation" class="nav-link" data-scroll-target="#step-5-verify-the-installation">Step 5 — Verify the Installation</a></li>
+  <li><a href="#running-the-shiny-demonstrator" id="toc-running-the-shiny-demonstrator" class="nav-link" data-scroll-target="#running-the-shiny-demonstrator">Running the Shiny Demonstrator</a></li>
+  <li><a href="#demonstration-mode" id="toc-demonstration-mode" class="nav-link" data-scroll-target="#demonstration-mode">Demonstration Mode</a></li>
+  <li><a href="#research-mode" id="toc-research-mode" class="nav-link" data-scroll-target="#research-mode">Research Mode</a></li>
+  <li><a href="#project-structure" id="toc-project-structure" class="nav-link" data-scroll-target="#project-structure">Project Structure</a></li>
+  <li><a href="#updating-core" id="toc-updating-core" class="nav-link" data-scroll-target="#updating-core">Updating CORE</a></li>
+  <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">Troubleshooting</a>
+  <ul class="collapse">
+  <li><a href="#package-installation-failures" id="toc-package-installation-failures" class="nav-link" data-scroll-target="#package-installation-failures">Package installation failures</a></li>
+  <li><a href="#shiny-application-does-not-launch" id="toc-shiny-application-does-not-launch" class="nav-link" data-scroll-target="#shiny-application-does-not-launch">Shiny application does not launch</a></li>
+  <li><a href="#project-root-issues" id="toc-project-root-issues" class="nav-link" data-scroll-target="#project-root-issues">Project-root issues</a></li>
+  </ul></li>
+  <li><a href="#next-steps" id="toc-next-steps" class="nav-link" data-scroll-target="#next-steps">Next Steps</a></li>
   </ul>
 </nav>
     </div>
@@ -199,7 +250,191 @@ ul.task-list li input[type="checkbox"] {
 <section id="step-1-clone-the-repository" class="level1">
 <h1>Step 1 — Clone the Repository</h1>
 <p>Clone the repository from GitHub:</p>
-<p>```bash git clone https://github.com/yrtsv/CORE.git</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/yrtsv/CORE.git</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Move into the project directory:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> CORE</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+<section id="step-2-open-the-project" class="level1">
+<h1>Step 2 — Open the Project</h1>
+<p>Open the project in RStudio:</p>
+<pre class="text"><code>CompanyMatchingEngine.Rproj</code></pre>
+<p>Using an R Project is strongly recommended because CORE relies on a stable project-root structure.</p>
+<hr>
+</section>
+<section id="step-3-install-required-packages" class="level1">
+<h1>Step 3 — Install Required Packages</h1>
+<p>Install all required packages:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"R/01_install_packages.R"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This script installs the package dependencies required by the framework.</p>
+<hr>
+</section>
+<section id="step-4-load-the-core-environment" class="level1">
+<h1>Step 4 — Load the CORE Environment</h1>
+<p>Load the required packages and initialise the environment:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"R/02_load_packages.R"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>After successful execution, CORE is ready for use.</p>
+<hr>
+</section>
+<section id="step-5-verify-the-installation" class="level1">
+<h1>Step 5 — Verify the Installation</h1>
+<p>Load the main CORE workflow:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"R/workflow/18_run_core.R"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>If no errors occur, the installation has completed successfully.</p>
+<hr>
+</section>
+<section id="running-the-shiny-demonstrator" class="level1">
+<h1>Running the Shiny Demonstrator</h1>
+<p>CORE includes an interactive Shiny demonstrator.</p>
+<p>Launch the demonstrator from the project root:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">options</span>(<span class="at">shiny.launch.browser =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>shiny<span class="sc">::</span><span class="fu">runApp</span>(</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">appDir =</span> <span class="st">"app"</span>,</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">host =</span> <span class="st">"127.0.0.1"</span>,</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">port =</span> <span class="dv">3838</span>,</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">launch.browser =</span> <span class="cn">TRUE</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>The demonstrator uses the actual CORE workflow rather than a simplified example implementation.</p>
+<p>A public version is also available:</p>
+<p><a href="https://corematch.shinyapps.io/core/" class="uri">https://corematch.shinyapps.io/core/</a></p>
+<hr>
+</section>
+<section id="demonstration-mode" class="level1">
+<h1>Demonstration Mode</h1>
+<p>Demonstration Mode automatically loads bundled example datasets and executes the CORE pipeline.</p>
+<p>This mode is recommended for first-time users.</p>
+<p>It includes:</p>
+<ul>
+<li>data preparation;</li>
+<li>entity resolution;</li>
+<li>candidate generation;</li>
+<li>similarity scoring;</li>
+<li>review queue creation;</li>
+<li>diagnostics;</li>
+<li>review-history display.</li>
+</ul>
+<hr>
+</section>
+<section id="research-mode" class="level1">
+<h1>Research Mode</h1>
+<p>Research Mode allows users to execute CORE using their own datasets.</p>
+<p>Users provide:</p>
+<ul>
+<li>an employer dataset (<code>csv</code>);</li>
+<li>a reference dataset (<code>csv</code>).</li>
+</ul>
+<p>The first column of each dataset is interpreted as the company-name variable.</p>
+<p>Example employer dataset:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>company</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>TESLA MOTORS</td>
+</tr>
+<tr class="even">
+<td>APPLE INC</td>
+</tr>
+<tr class="odd">
+<td>MICROSOFT CORP</td>
+</tr>
+</tbody>
+</table>
+<p>Example reference dataset:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>company_name</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>TESLA</td>
+</tr>
+<tr class="even">
+<td>APPLE INC</td>
+</tr>
+<tr class="odd">
+<td>MICROSOFT CORPORATION</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="project-structure" class="level1">
+<h1>Project Structure</h1>
+<p>A typical installation contains the following structure:</p>
+<pre class="text"><code>CORE/
+├── app/
+├── assets/
+├── docs/
+├── inst/
+├── R/
+├── website/
+├── DESCRIPTION
+├── LICENSE
+├── NEWS.md
+├── README.md
+└── CITATION.cff</code></pre>
+<hr>
+</section>
+<section id="updating-core" class="level1">
+<h1>Updating CORE</h1>
+<p>To update an existing installation:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull origin main</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>After updating, reinstall any newly required packages:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"R/01_install_packages.R"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+<section id="troubleshooting" class="level1">
+<h1>Troubleshooting</h1>
+<section id="package-installation-failures" class="level2">
+<h2 class="anchored" data-anchor-id="package-installation-failures">Package installation failures</h2>
+<p>Re-run:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"R/01_install_packages.R"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>and verify your internet connection.</p>
+<hr>
+</section>
+<section id="shiny-application-does-not-launch" class="level2">
+<h2 class="anchored" data-anchor-id="shiny-application-does-not-launch">Shiny application does not launch</h2>
+<p>Run:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>shiny<span class="sc">::</span><span class="fu">runApp</span>(</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">appDir =</span> <span class="st">"app"</span>,</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">launch.browser =</span> <span class="cn">TRUE</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>If necessary:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">options</span>(<span class="at">shiny.launch.browser =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+<section id="project-root-issues" class="level2">
+<h2 class="anchored" data-anchor-id="project-root-issues">Project-root issues</h2>
+<p>Ensure that:</p>
+<ul>
+<li>the complete repository was cloned;</li>
+<li>the project is opened as an R Project;</li>
+<li>relative paths remain unchanged.</li>
+</ul>
+<p>CORE assumes a stable project structure.</p>
+<hr>
+</section>
+</section>
+<section id="next-steps" class="level1">
+<h1>Next Steps</h1>
+<p>After installation, the recommended reading order is:</p>
+<pre class="text"><code>Philosophy
+    ↓
+Architecture
+    ↓
+Workflow
+    ↓
+Methodology
+    ↓
+Tutorials</code></pre>
+<p>New users are strongly encouraged to begin with the Shiny Demonstrator before applying CORE to large empirical datasets.</p>
 
 
 </section>
