@@ -179,14 +179,14 @@
     "href": "index.html",
     "title": "Corporate Entity Resolution Engine (CORE)",
     "section": "",
-    "text": "Entity resolution does not merely produce analytical datasets.\nIt produces scientific knowledge.\n\n\n\n\n\n\n🚀 Launch Live Demonstrator\n\n\nCORE is an open-source research software framework designed to support transparent, reviewable, reproducible, and cumulative entity resolution in empirical research.\nRather than treating entity resolution as a disposable data-cleaning task, CORE approaches entity resolution as a scientific process in which computational methods, expert judgement, and validated knowledge work together to produce trustworthy analytical datasets.\nOriginally developed for corporate entity resolution, CORE has been intentionally designed as a general methodology capable of supporting transparent entity resolution across a broad range of empirical research domains."
+    "text": "Entity resolution does not merely produce analytical datasets.\nIt produces scientific knowledge.\n\n\n\n\n\n\nTry CORE directly in your browser.\n\n\nLaunch Live Demonstrator\n\n\nCORE is an open-source research software framework designed to support transparent, reviewable, reproducible, and cumulative entity resolution in empirical research.\nRather than treating entity resolution as a disposable data-cleaning task, CORE approaches entity resolution as a scientific process in which computational methods, expert judgement, and validated knowledge work together to produce trustworthy analytical datasets.\nOriginally developed for corporate entity resolution, CORE has been intentionally designed as a general methodology capable of supporting transparent entity resolution across a broad range of empirical research domains."
   },
   {
     "objectID": "index.html#transparent.-reviewable.-reproducible.-cumulative.",
     "href": "index.html#transparent.-reviewable.-reproducible.-cumulative.",
     "title": "Corporate Entity Resolution Engine (CORE)",
     "section": "",
-    "text": "Entity resolution does not merely produce analytical datasets.\nIt produces scientific knowledge.\n\n\n\n\n\n\n🚀 Launch Live Demonstrator\n\n\nCORE is an open-source research software framework designed to support transparent, reviewable, reproducible, and cumulative entity resolution in empirical research.\nRather than treating entity resolution as a disposable data-cleaning task, CORE approaches entity resolution as a scientific process in which computational methods, expert judgement, and validated knowledge work together to produce trustworthy analytical datasets.\nOriginally developed for corporate entity resolution, CORE has been intentionally designed as a general methodology capable of supporting transparent entity resolution across a broad range of empirical research domains."
+    "text": "Entity resolution does not merely produce analytical datasets.\nIt produces scientific knowledge.\n\n\n\n\n\n\nTry CORE directly in your browser.\n\n\nLaunch Live Demonstrator\n\n\nCORE is an open-source research software framework designed to support transparent, reviewable, reproducible, and cumulative entity resolution in empirical research.\nRather than treating entity resolution as a disposable data-cleaning task, CORE approaches entity resolution as a scientific process in which computational methods, expert judgement, and validated knowledge work together to produce trustworthy analytical datasets.\nOriginally developed for corporate entity resolution, CORE has been intentionally designed as a general methodology capable of supporting transparent entity resolution across a broad range of empirical research domains."
   },
   {
     "objectID": "index.html#why-core",
@@ -214,7 +214,7 @@
     "href": "index.html#methodological-workflow",
     "title": "Corporate Entity Resolution Engine (CORE)",
     "section": "Methodological Workflow",
-    "text": "Methodological Workflow\nCORE implements a six-stage research workflow.\n```text Raw Data ↓ Data Acquisition ↓ Data Preparation ↓ Entity Resolution ↓ Expert Validation ↓ Knowledge Preservation ↓ Analysis-Ready Outputs"
+    "text": "Methodological Workflow\nCORE implements a six-stage research workflow.\nRaw Data\n    ↓\nData Acquisition\n    ↓\nData Preparation\n    ↓\nEntity Resolution\n    ↓\nExpert Validation\n    ↓\nKnowledge Preservation\n    ↓\nAnalysis-Ready Outputs"
   },
   {
     "objectID": "architecture.html",

@@ -16,7 +16,11 @@ toc: false
        width="700">
 </p>
 
-<div style="text-align: center; margin-top: 28px; margin-bottom: 40px;">
+<div style="text-align: center; margin-top: 20px; margin-bottom: 40px;">
+
+<p style="font-size: 1.15rem; margin-bottom: 18px;">
+Try CORE directly in your browser.
+</p>
 
 <a href="https://corematch.shinyapps.io/core/"
    target="_blank"
@@ -24,7 +28,7 @@ toc: false
    class="btn btn-primary btn-lg"
    style="padding: 14px 28px; font-size: 1.15rem;">
 
-🚀 Launch Live Demonstrator
+Launch Live Demonstrator
 
 </a>
 
@@ -104,3 +108,4 @@ Expert Validation
 Knowledge Preservation
     ↓
 Analysis-Ready Outputs
+```
