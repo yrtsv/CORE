@@ -1,3 +1,4 @@
 "employer_name","reference_name","employer_id","reference_id","user_decision","confidence_score","decision_source","reviewed_by","reviewed_at","review_notes"
 "APPLE BANK","APPLE INC","1","10","accept",85,"human_review","Yurtsev","2026-07-06 20:09:57.474563","Looks correct"
 "GENERAL ELECTRIC","GENERAL ELECTRIC COMPANY","2","20","reject",92,"human_review","Yurtsev","2026-07-06 20:09:57.474563","Different entity"
+"TESLA MOTORS","TESLA","6","6","accept",57.5,"shiny_review","shiny_user","2026-07-09 21:01:12",

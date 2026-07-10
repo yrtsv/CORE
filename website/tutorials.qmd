@@ -1,4 +1,26 @@
 ---
 title: "Tutorials"
+toc: true
 ---
-Documentation under development.
+
+This section provides practical examples demonstrating how CORE can be used within empirical research workflows.
+
+The objective of these tutorials is not only to explain how the software operates, but also to illustrate the methodological principles underlying transparent and reproducible entity resolution.
+
+---
+
+# Tutorial 1 — Running the CORE Demonstrator
+
+The easiest way to explore CORE is through the interactive Shiny demonstrator.
+
+Start the application from the project root directory:
+
+```r
+options(shiny.launch.browser = TRUE)
+
+shiny::runApp(
+  appDir = "app",
+  host = "127.0.0.1",
+  port = 3838,
+  launch.browser = TRUE
+)

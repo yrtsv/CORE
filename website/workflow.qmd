@@ -1,4 +1,230 @@
 ---
 title: "Workflow"
+toc: true
 ---
-Documentation under development.
+## From Raw Data to Scientific Knowledge
+
+CORE transforms heterogeneous raw data into transparent, reviewable, reproducible, and analysis-ready outputs through a sequence of explicit methodological stages.
+
+Rather than combining multiple operations within a single opaque procedure, each stage performs a distinct scientific responsibility while preserving the intermediate information required to understand how final entity resolution decisions have been obtained.
+
+The workflow therefore represents more than a computational pipeline.
+
+It provides a structured research process in which data preparation, computational evaluation, expert review, knowledge preservation, and output generation remain clearly separated while contributing to a coherent and reproducible methodology.
+
+---
+
+# Workflow Overview
+
+The CORE workflow consists of six consecutive stages.
+
+```text
+Raw Data
+    │
+    ▼
+Data Acquisition
+    │
+    ▼
+Data Preparation
+    │
+    ▼
+Entity Resolution
+    │
+    ▼
+Expert Validation
+    │
+    ▼
+Knowledge Preservation
+    │
+    ▼
+Analysis-Ready Outputs
+```
+
+Each stage produces explicit outputs that become the inputs of the following stage.
+
+Intermediate results remain available throughout the workflow, allowing researchers to inspect, validate, and reproduce every important methodological decision.
+
+Unlike conventional matching pipelines, CORE deliberately preserves uncertainty whenever computational evidence alone cannot support reliable scientific conclusions.
+
+---
+
+# Stage 1 — Data Acquisition
+
+The workflow begins by importing all resources required for entity resolution.
+
+These may include:
+
+- reference datasets;
+- target datasets;
+- project dictionaries;
+- community dictionaries;
+- configuration files.
+
+At this stage the objective is reproducibility rather than transformation.
+
+Raw observations remain unchanged throughout the workflow.
+
+---
+
+# Stage 2 — Data Preparation
+
+Before entity resolution can begin, observations are standardised to reduce avoidable variation while preserving their scientific meaning.
+
+Typical operations include:
+
+- text normalisation;
+- tokenisation;
+- suffix preparation;
+- alias preparation;
+- reference preparation.
+
+Importantly, this stage does not attempt to establish correspondences between entities.
+
+Its purpose is solely to improve the quality and consistency of information entering the resolution process.
+
+---
+
+# Stage 3 — Entity Resolution
+
+Entity resolution forms the computational core of the workflow.
+
+Rather than relying upon a single matching algorithm, CORE performs entity resolution through multiple independent methodological operations.
+
+These include:
+
+- exact matching;
+- suffix normalisation;
+- alias resolution;
+- candidate generation;
+- similarity assessment.
+
+Each component contributes a different form of computational evidence regarding potential correspondences.
+
+The objective of this stage is not maximum automation.
+
+The objective is to resolve observations that can be established confidently while explicitly identifying those requiring further scientific evaluation.
+
+---
+
+# Stage 4 — Expert Validation
+
+Not every correspondence can be established through computational procedures alone.
+
+Observations whose interpretation remains uncertain proceed to expert validation through the Review Queue.
+
+Within CORE, uncertainty is deliberately preserved rather than concealed.
+
+Researchers therefore evaluate:
+
+- computational evidence;
+- historical information;
+- domain expertise;
+- contextual interpretation;
+- methodological considerations.
+
+Expert validation therefore remains an explicit and transparent stage of the workflow rather than an undocumented correction performed outside the software.
+
+---
+
+# Stage 5 — Knowledge Preservation
+
+Validated decisions generated during expert review represent scientific knowledge that extends beyond the immediate objectives of individual projects.
+
+Rather than allowing this knowledge to disappear once entity resolution has been completed, CORE preserves validated decisions within the Learning Layer.
+
+Knowledge preservation should not be interpreted as autonomous learning.
+
+The framework does not infer scientific knowledge independently.
+
+Instead, it preserves validated expert judgement so that future investigations may benefit from previous scientific evaluation while remaining free to refine, revise, or reject earlier conclusions.
+
+---
+
+# Learning Philosophy
+
+Knowledge preserved within the Learning Layer does not automatically influence future workflows.
+
+CORE currently distinguishes three stages of knowledge integration.
+
+## Passive Learning
+
+Validated decisions are preserved but do not influence computational procedures.
+
+## Consensus Learning
+
+Knowledge becomes eligible for methodological influence only after sufficient independent scientific validation has accumulated.
+
+## Soft Learning
+
+Validated knowledge influences future workflows through transparent score adjustments and review prioritisation rather than automatic acceptance or rejection.
+
+This approach protects future investigations from isolated reviewer errors while preserving cumulative scientific knowledge.
+
+---
+
+# Stage 6 — Analysis-Ready Outputs
+
+The final stage produces datasets suitable for empirical analysis together with the information required to understand how those datasets were constructed.
+
+Typical outputs include:
+
+- matched datasets;
+- review decisions;
+- learning dictionaries;
+- diagnostics;
+- reproducible metadata.
+
+Researchers therefore obtain not only analytical outputs but also a transparent record of the methodological process supporting those outputs.
+
+---
+
+# Workflow Characteristics
+
+The workflow implemented within CORE has been designed around five methodological characteristics.
+
+## Sequential
+
+Each stage builds explicitly upon the outputs of the previous stage.
+
+## Transparent
+
+Intermediate outputs remain available throughout the workflow.
+
+## Reviewable
+
+Scientific judgement remains an explicit component of the workflow through the Review Queue.
+
+## Reproducible
+
+The workflow can be repeated and independently verified across different datasets and projects.
+
+## Cumulative
+
+Validated knowledge contributes to successive investigations rather than being repeatedly reconstructed.
+
+---
+
+# Why This Workflow?
+
+Many matching systems focus primarily on producing final datasets.
+
+CORE adopts a different perspective.
+
+The framework seeks to preserve:
+
+- intermediate reasoning;
+- expert judgement;
+- methodological evidence;
+- scientific continuity.
+
+From this perspective, the workflow itself becomes a scientific contribution rather than merely a computational pipeline.
+
+---
+
+# Final Principle
+
+> Entity resolution does not merely produce analytical datasets.
+>
+> It produces scientific knowledge.
+
+The workflow implemented within CORE has been designed around this principle.

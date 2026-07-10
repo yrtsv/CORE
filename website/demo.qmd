@@ -1,0 +1,74 @@
+---
+title: "CORE Demonstrator"
+page-layout: full
+toc: false
+---
+
+## Interactive CORE Demonstrator
+
+The CORE Demonstrator provides an interactive environment for exploring the methodology and workflow implemented by CORE.
+
+The current demonstrator includes:
+
+- candidate generation;
+- confidence scoring;
+- review queue management;
+- expert validation;
+- review history display;
+- export of reviewed decisions.
+
+The objective of the demonstrator is not to replace the full CORE framework, but to provide researchers with a transparent and accessible environment for understanding the methodological principles underlying the project.
+
+---
+
+## Launch Demonstrator
+
+::: {.callout-tip}
+## Live Demonstrator
+
+The public demonstrator will become available following deployment of the first public release.
+
+**Current status:** Under development.
+:::
+
+---
+
+## Planned Capabilities
+
+Future versions of the demonstrator are expected to support:
+
+- upload of employer datasets;
+- upload of reference datasets;
+- interactive review workflows;
+- diagnostics and explainability outputs;
+- public demonstration workflows;
+- benchmarking examples.
+
+---
+
+## Relationship with the CORE Framework
+
+The demonstrator represents an interactive interface built on top of the methodological architecture implemented within CORE.
+
+It therefore provides an accessible introduction to:
+
+- the Entity Resolution Engine;
+- the Review Queue;
+- the Learning Layer;
+- validated decision preservation.
+
+Researchers interested in the full framework should consult the documentation website and GitHub repository.
+
+---
+
+## Current Development Status
+
+The demonstrator currently supports:
+
+- demonstration mode using bundled example datasets;
+- research mode using user-provided datasets;
+- review queue interaction;
+- diagnostics inspection;
+- validated review history display.
+
+Public deployment is planned as part of the CORE v1.0 release roadmap.

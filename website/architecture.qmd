@@ -1,4 +1,229 @@
 ---
 title: "Architecture"
+toc: true
 ---
-Documentation under development.
+## Methodology Drives Architecture
+
+CORE was designed as a research software framework rather than a conventional matching library.
+
+Consequently, architectural decisions within CORE are driven primarily by methodological requirements rather than software engineering considerations alone.
+
+The objective of the framework is not simply to maximise matching performance. Instead, the architecture seeks to support:
+
+- transparency;
+- reviewability;
+- reproducibility;
+- cumulative scientific knowledge.
+
+Software implementation therefore serves the scientific process rather than defining it.
+
+---
+
+# Layered Architecture
+
+CORE follows a layered architecture in which each stage performs a distinct methodological responsibility.
+
+```text
+Input Layer
+     ↓
+Preparation Layer
+     ↓
+Resolution Layer
+     ↓
+Validation Layer
+     ↓
+Knowledge Layer
+     ↓
+Output Layer
+```
+
+This separation ensures that intermediate outputs remain observable, reproducible, and independently testable throughout the workflow.
+
+---
+
+# Input Layer
+
+The Input Layer is responsible for importing all resources required for entity resolution.
+
+Typical inputs include:
+
+- employer datasets;
+- reference datasets;
+- project dictionaries;
+- community dictionaries;
+- configuration files.
+
+The objective of this layer is reproducibility rather than transformation.
+
+Raw data remain unchanged throughout the workflow.
+
+---
+
+# Preparation Layer
+
+The Preparation Layer standardises observations before matching begins.
+
+Typical operations include:
+
+- text normalisation;
+- tokenisation;
+- suffix preparation;
+- alias preparation;
+- reference preparation.
+
+Importantly, this stage does not attempt to establish correspondences between entities.
+
+Its responsibility is to reduce avoidable technical variation while preserving scientific meaning.
+
+---
+
+# Resolution Layer
+
+The Resolution Layer forms the computational core of CORE.
+
+Entity resolution is performed through multiple independent operations including:
+
+- exact matching;
+- suffix normalisation;
+- alias resolution;
+- candidate generation;
+- similarity assessment.
+
+Each component contributes a different form of computational evidence regarding potential correspondences.
+
+This approach reduces dependence upon any individual matching strategy.
+
+---
+
+# Validation Layer
+
+The Validation Layer manages uncertainty.
+
+Candidate correspondences for which computational evidence remains insufficient are transferred to the Review Queue where scientific judgement complements algorithmic evidence.
+
+The framework deliberately preserves uncertainty whenever reliable conclusions cannot be established computationally.
+
+The objective is scientific reliability rather than maximum automation.
+
+---
+
+# Knowledge Layer
+
+The Knowledge Layer preserves validated scientific judgement through the Learning Layer.
+
+Knowledge preservation should not be interpreted as autonomous learning.
+
+Instead, validated expert decisions become reusable scientific knowledge that remains available for future investigation and methodological continuity.
+
+CORE currently distinguishes three stages of knowledge integration:
+
+## Passive Learning
+
+Validated decisions are preserved but do not influence computational procedures.
+
+## Consensus Learning
+
+Knowledge becomes eligible for methodological influence only after sufficient independent validation has accumulated.
+
+## Soft Learning
+
+Validated knowledge influences future workflows through transparent score adjustments and review prioritisation rather than automatic decisions.
+
+---
+
+# Output Layer
+
+The Output Layer generates both analysis-ready datasets and methodological evidence.
+
+Typical outputs include:
+
+- matched datasets;
+- review decisions;
+- learning dictionaries;
+- diagnostics;
+- intermediate outputs.
+
+The framework therefore preserves not only analytical results but also the reasoning that supports them.
+
+---
+
+# Module Structure
+
+The current CORE implementation consists of the following major modules.
+
+```text
+07_clean_names.R
+08_tokenizer.R
+
+10_suffix_engine.R
+11_match_exact.R
+12_alias_engine.R
+13_candidate_generation.R
+14_scoring_engine.R
+
+15_review_queue.R
+16_learning_layer.R
+17_export_results.R
+
+18_run_core.R
+
+23_dictionary_manager.R
+
+24_suffix_utils.R
+25_alias_utils.R
+26_candidate_utils.R
+27_scoring_utils.R
+```
+
+The modular structure allows components to evolve independently while preserving a stable methodological framework.
+
+---
+
+# Architectural Principles
+
+CORE has been designed around five architectural principles.
+
+## Separation of Responsibilities
+
+Each module performs a single methodological responsibility.
+
+## Transparency
+
+Intermediate outputs remain available throughout the workflow.
+
+## Reviewability
+
+Scientific judgement remains an explicit component of the architecture.
+
+## Reproducibility
+
+The same workflow produces reproducible results across projects and datasets.
+
+## Cumulative Knowledge
+
+Validated scientific knowledge remains available for future investigations.
+
+---
+
+# Why This Architecture?
+
+Traditional matching systems often prioritise automation and computational efficiency.
+
+CORE adopts a different perspective.
+
+The framework prioritises:
+
+- methodological transparency;
+- scientific accountability;
+- explicit uncertainty management;
+- cumulative knowledge preservation.
+
+From this perspective, software architecture becomes a mechanism for supporting empirical research rather than an objective in itself.
+
+---
+
+# Final Principle
+
+> Software implementation serves the scientific process, not the reverse.
+
+This principle defines the architectural philosophy of CORE.

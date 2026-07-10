@@ -42,7 +42,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-e9072c35d400738dd8f5400c9614cb45.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-661d3141088f8644463b6179fa03ec3d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -120,8 +120,16 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Tutorials</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./demo.html"> 
+<span class="menu-text">Demonstrator</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./news.html"> 
 <span class="menu-text">News</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://github.com/yrtsv/CORE/issues"> 
+<span class="menu-text">Feedback</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -141,8 +149,37 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#from-raw-data-to-scientific-knowledge" id="toc-from-raw-data-to-scientific-knowledge" class="nav-link active" data-scroll-target="#from-raw-data-to-scientific-knowledge">From Raw Data to Scientific Knowledge</a></li>
+  <li><a href="#workflow-overview" id="toc-workflow-overview" class="nav-link" data-scroll-target="#workflow-overview">Workflow Overview</a></li>
+  <li><a href="#stage-1-data-acquisition" id="toc-stage-1-data-acquisition" class="nav-link" data-scroll-target="#stage-1-data-acquisition">Stage 1 — Data Acquisition</a></li>
+  <li><a href="#stage-2-data-preparation" id="toc-stage-2-data-preparation" class="nav-link" data-scroll-target="#stage-2-data-preparation">Stage 2 — Data Preparation</a></li>
+  <li><a href="#stage-3-entity-resolution" id="toc-stage-3-entity-resolution" class="nav-link" data-scroll-target="#stage-3-entity-resolution">Stage 3 — Entity Resolution</a></li>
+  <li><a href="#stage-4-expert-validation" id="toc-stage-4-expert-validation" class="nav-link" data-scroll-target="#stage-4-expert-validation">Stage 4 — Expert Validation</a></li>
+  <li><a href="#stage-5-knowledge-preservation" id="toc-stage-5-knowledge-preservation" class="nav-link" data-scroll-target="#stage-5-knowledge-preservation">Stage 5 — Knowledge Preservation</a></li>
+  <li><a href="#learning-philosophy" id="toc-learning-philosophy" class="nav-link" data-scroll-target="#learning-philosophy">Learning Philosophy</a>
+  <ul class="collapse">
+  <li><a href="#passive-learning" id="toc-passive-learning" class="nav-link" data-scroll-target="#passive-learning">Passive Learning</a></li>
+  <li><a href="#consensus-learning" id="toc-consensus-learning" class="nav-link" data-scroll-target="#consensus-learning">Consensus Learning</a></li>
+  <li><a href="#soft-learning" id="toc-soft-learning" class="nav-link" data-scroll-target="#soft-learning">Soft Learning</a></li>
+  </ul></li>
+  <li><a href="#stage-6-analysis-ready-outputs" id="toc-stage-6-analysis-ready-outputs" class="nav-link" data-scroll-target="#stage-6-analysis-ready-outputs">Stage 6 — Analysis-Ready Outputs</a></li>
+  <li><a href="#workflow-characteristics" id="toc-workflow-characteristics" class="nav-link" data-scroll-target="#workflow-characteristics">Workflow Characteristics</a>
+  <ul class="collapse">
+  <li><a href="#sequential" id="toc-sequential" class="nav-link" data-scroll-target="#sequential">Sequential</a></li>
+  <li><a href="#transparent" id="toc-transparent" class="nav-link" data-scroll-target="#transparent">Transparent</a></li>
+  <li><a href="#reviewable" id="toc-reviewable" class="nav-link" data-scroll-target="#reviewable">Reviewable</a></li>
+  <li><a href="#reproducible" id="toc-reproducible" class="nav-link" data-scroll-target="#reproducible">Reproducible</a></li>
+  <li><a href="#cumulative" id="toc-cumulative" class="nav-link" data-scroll-target="#cumulative">Cumulative</a></li>
+  </ul></li>
+  <li><a href="#why-this-workflow" id="toc-why-this-workflow" class="nav-link" data-scroll-target="#why-this-workflow">Why This Workflow?</a></li>
+  <li><a href="#final-principle" id="toc-final-principle" class="nav-link" data-scroll-target="#final-principle">Final Principle</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -166,9 +203,195 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Documentation under development.</p>
+<section id="from-raw-data-to-scientific-knowledge" class="level2">
+<h2 class="anchored" data-anchor-id="from-raw-data-to-scientific-knowledge">From Raw Data to Scientific Knowledge</h2>
+<p>CORE transforms heterogeneous raw data into transparent, reviewable, reproducible, and analysis-ready outputs through a sequence of explicit methodological stages.</p>
+<p>Rather than combining multiple operations within a single opaque procedure, each stage performs a distinct scientific responsibility while preserving the intermediate information required to understand how final entity resolution decisions have been obtained.</p>
+<p>The workflow therefore represents more than a computational pipeline.</p>
+<p>It provides a structured research process in which data preparation, computational evaluation, expert review, knowledge preservation, and output generation remain clearly separated while contributing to a coherent and reproducible methodology.</p>
+<hr>
+</section>
+<section id="workflow-overview" class="level1">
+<h1>Workflow Overview</h1>
+<p>The CORE workflow consists of six consecutive stages.</p>
+<pre class="text"><code>Raw Data
+    │
+    ▼
+Data Acquisition
+    │
+    ▼
+Data Preparation
+    │
+    ▼
+Entity Resolution
+    │
+    ▼
+Expert Validation
+    │
+    ▼
+Knowledge Preservation
+    │
+    ▼
+Analysis-Ready Outputs</code></pre>
+<p>Each stage produces explicit outputs that become the inputs of the following stage.</p>
+<p>Intermediate results remain available throughout the workflow, allowing researchers to inspect, validate, and reproduce every important methodological decision.</p>
+<p>Unlike conventional matching pipelines, CORE deliberately preserves uncertainty whenever computational evidence alone cannot support reliable scientific conclusions.</p>
+<hr>
+</section>
+<section id="stage-1-data-acquisition" class="level1">
+<h1>Stage 1 — Data Acquisition</h1>
+<p>The workflow begins by importing all resources required for entity resolution.</p>
+<p>These may include:</p>
+<ul>
+<li>reference datasets;</li>
+<li>target datasets;</li>
+<li>project dictionaries;</li>
+<li>community dictionaries;</li>
+<li>configuration files.</li>
+</ul>
+<p>At this stage the objective is reproducibility rather than transformation.</p>
+<p>Raw observations remain unchanged throughout the workflow.</p>
+<hr>
+</section>
+<section id="stage-2-data-preparation" class="level1">
+<h1>Stage 2 — Data Preparation</h1>
+<p>Before entity resolution can begin, observations are standardised to reduce avoidable variation while preserving their scientific meaning.</p>
+<p>Typical operations include:</p>
+<ul>
+<li>text normalisation;</li>
+<li>tokenisation;</li>
+<li>suffix preparation;</li>
+<li>alias preparation;</li>
+<li>reference preparation.</li>
+</ul>
+<p>Importantly, this stage does not attempt to establish correspondences between entities.</p>
+<p>Its purpose is solely to improve the quality and consistency of information entering the resolution process.</p>
+<hr>
+</section>
+<section id="stage-3-entity-resolution" class="level1">
+<h1>Stage 3 — Entity Resolution</h1>
+<p>Entity resolution forms the computational core of the workflow.</p>
+<p>Rather than relying upon a single matching algorithm, CORE performs entity resolution through multiple independent methodological operations.</p>
+<p>These include:</p>
+<ul>
+<li>exact matching;</li>
+<li>suffix normalisation;</li>
+<li>alias resolution;</li>
+<li>candidate generation;</li>
+<li>similarity assessment.</li>
+</ul>
+<p>Each component contributes a different form of computational evidence regarding potential correspondences.</p>
+<p>The objective of this stage is not maximum automation.</p>
+<p>The objective is to resolve observations that can be established confidently while explicitly identifying those requiring further scientific evaluation.</p>
+<hr>
+</section>
+<section id="stage-4-expert-validation" class="level1">
+<h1>Stage 4 — Expert Validation</h1>
+<p>Not every correspondence can be established through computational procedures alone.</p>
+<p>Observations whose interpretation remains uncertain proceed to expert validation through the Review Queue.</p>
+<p>Within CORE, uncertainty is deliberately preserved rather than concealed.</p>
+<p>Researchers therefore evaluate:</p>
+<ul>
+<li>computational evidence;</li>
+<li>historical information;</li>
+<li>domain expertise;</li>
+<li>contextual interpretation;</li>
+<li>methodological considerations.</li>
+</ul>
+<p>Expert validation therefore remains an explicit and transparent stage of the workflow rather than an undocumented correction performed outside the software.</p>
+<hr>
+</section>
+<section id="stage-5-knowledge-preservation" class="level1">
+<h1>Stage 5 — Knowledge Preservation</h1>
+<p>Validated decisions generated during expert review represent scientific knowledge that extends beyond the immediate objectives of individual projects.</p>
+<p>Rather than allowing this knowledge to disappear once entity resolution has been completed, CORE preserves validated decisions within the Learning Layer.</p>
+<p>Knowledge preservation should not be interpreted as autonomous learning.</p>
+<p>The framework does not infer scientific knowledge independently.</p>
+<p>Instead, it preserves validated expert judgement so that future investigations may benefit from previous scientific evaluation while remaining free to refine, revise, or reject earlier conclusions.</p>
+<hr>
+</section>
+<section id="learning-philosophy" class="level1">
+<h1>Learning Philosophy</h1>
+<p>Knowledge preserved within the Learning Layer does not automatically influence future workflows.</p>
+<p>CORE currently distinguishes three stages of knowledge integration.</p>
+<section id="passive-learning" class="level2">
+<h2 class="anchored" data-anchor-id="passive-learning">Passive Learning</h2>
+<p>Validated decisions are preserved but do not influence computational procedures.</p>
+</section>
+<section id="consensus-learning" class="level2">
+<h2 class="anchored" data-anchor-id="consensus-learning">Consensus Learning</h2>
+<p>Knowledge becomes eligible for methodological influence only after sufficient independent scientific validation has accumulated.</p>
+</section>
+<section id="soft-learning" class="level2">
+<h2 class="anchored" data-anchor-id="soft-learning">Soft Learning</h2>
+<p>Validated knowledge influences future workflows through transparent score adjustments and review prioritisation rather than automatic acceptance or rejection.</p>
+<p>This approach protects future investigations from isolated reviewer errors while preserving cumulative scientific knowledge.</p>
+<hr>
+</section>
+</section>
+<section id="stage-6-analysis-ready-outputs" class="level1">
+<h1>Stage 6 — Analysis-Ready Outputs</h1>
+<p>The final stage produces datasets suitable for empirical analysis together with the information required to understand how those datasets were constructed.</p>
+<p>Typical outputs include:</p>
+<ul>
+<li>matched datasets;</li>
+<li>review decisions;</li>
+<li>learning dictionaries;</li>
+<li>diagnostics;</li>
+<li>reproducible metadata.</li>
+</ul>
+<p>Researchers therefore obtain not only analytical outputs but also a transparent record of the methodological process supporting those outputs.</p>
+<hr>
+</section>
+<section id="workflow-characteristics" class="level1">
+<h1>Workflow Characteristics</h1>
+<p>The workflow implemented within CORE has been designed around five methodological characteristics.</p>
+<section id="sequential" class="level2">
+<h2 class="anchored" data-anchor-id="sequential">Sequential</h2>
+<p>Each stage builds explicitly upon the outputs of the previous stage.</p>
+</section>
+<section id="transparent" class="level2">
+<h2 class="anchored" data-anchor-id="transparent">Transparent</h2>
+<p>Intermediate outputs remain available throughout the workflow.</p>
+</section>
+<section id="reviewable" class="level2">
+<h2 class="anchored" data-anchor-id="reviewable">Reviewable</h2>
+<p>Scientific judgement remains an explicit component of the workflow through the Review Queue.</p>
+</section>
+<section id="reproducible" class="level2">
+<h2 class="anchored" data-anchor-id="reproducible">Reproducible</h2>
+<p>The workflow can be repeated and independently verified across different datasets and projects.</p>
+</section>
+<section id="cumulative" class="level2">
+<h2 class="anchored" data-anchor-id="cumulative">Cumulative</h2>
+<p>Validated knowledge contributes to successive investigations rather than being repeatedly reconstructed.</p>
+<hr>
+</section>
+</section>
+<section id="why-this-workflow" class="level1">
+<h1>Why This Workflow?</h1>
+<p>Many matching systems focus primarily on producing final datasets.</p>
+<p>CORE adopts a different perspective.</p>
+<p>The framework seeks to preserve:</p>
+<ul>
+<li>intermediate reasoning;</li>
+<li>expert judgement;</li>
+<li>methodological evidence;</li>
+<li>scientific continuity.</li>
+</ul>
+<p>From this perspective, the workflow itself becomes a scientific contribution rather than merely a computational pipeline.</p>
+<hr>
+</section>
+<section id="final-principle" class="level1">
+<h1>Final Principle</h1>
+<blockquote class="blockquote">
+<p>Entity resolution does not merely produce analytical datasets.</p>
+<p>It produces scientific knowledge.</p>
+</blockquote>
+<p>The workflow implemented within CORE has been designed around this principle.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

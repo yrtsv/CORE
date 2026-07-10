@@ -13,11 +13,11 @@ Description: CORE is a modular research software framework for
     corporate entity resolution. It provides reproducible workflows
     for cleaning company names, suffix normalization, alias handling,
     candidate generation, similarity scoring, manual review,
-    learning-based decision reuse, and export of reproducible,
+    validated decision preservation, and export of reproducible,
     analysis-ready matched datasets.
 License: MIT + file LICENSE
-URL: https://github.com/YurtsevUymaz/CORE
-BugReports: https://github.com/YurtsevUymaz/CORE/issues
+URL: https://github.com/yrtsv/CORE
+BugReports: https://github.com/yrtsv/CORE/issues
 Encoding: UTF-8
 LazyData: true
 Imports:

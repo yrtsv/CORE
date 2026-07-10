@@ -42,7 +42,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-e9072c35d400738dd8f5400c9614cb45.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-661d3141088f8644463b6179fa03ec3d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -120,8 +120,16 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Tutorials</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./demo.html"> 
+<span class="menu-text">Demonstrator</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link active" href="./news.html" aria-current="page"> 
 <span class="menu-text">News</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://github.com/yrtsv/CORE/issues"> 
+<span class="menu-text">Feedback</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -141,8 +149,43 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#core-v1.0.0-first-stable-release" id="toc-core-v1.0.0-first-stable-release" class="nav-link active" data-scroll-target="#core-v1.0.0-first-stable-release">CORE v1.0.0 — First Stable Release</a>
+  <ul class="collapse">
+  <li><a href="#major-features" id="toc-major-features" class="nav-link" data-scroll-target="#major-features">Major Features</a>
+  <ul class="collapse">
+  <li><a href="#entity-resolution-engine" id="toc-entity-resolution-engine" class="nav-link" data-scroll-target="#entity-resolution-engine">Entity Resolution Engine</a></li>
+  <li><a href="#review-queue" id="toc-review-queue" class="nav-link" data-scroll-target="#review-queue">Review Queue</a></li>
+  <li><a href="#learning-layer-infrastructure" id="toc-learning-layer-infrastructure" class="nav-link" data-scroll-target="#learning-layer-infrastructure">Learning Layer Infrastructure</a></li>
+  <li><a href="#dictionary-infrastructure" id="toc-dictionary-infrastructure" class="nav-link" data-scroll-target="#dictionary-infrastructure">Dictionary Infrastructure</a></li>
+  <li><a href="#documentation" id="toc-documentation" class="nav-link" data-scroll-target="#documentation">Documentation</a></li>
+  <li><a href="#research-software-infrastructure" id="toc-research-software-infrastructure" class="nav-link" data-scroll-target="#research-software-infrastructure">Research Software Infrastructure</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#core-v1.0.1-documentation-website" id="toc-core-v1.0.1-documentation-website" class="nav-link" data-scroll-target="#core-v1.0.1-documentation-website">CORE v1.0.1 — Documentation Website</a></li>
+  <li><a href="#core-v1.0.2-interactive-demonstrator" id="toc-core-v1.0.2-interactive-demonstrator" class="nav-link" data-scroll-target="#core-v1.0.2-interactive-demonstrator">CORE v1.0.2 — Interactive Demonstrator</a></li>
+  <li><a href="#current-development-priorities" id="toc-current-development-priorities" class="nav-link" data-scroll-target="#current-development-priorities">Current Development Priorities</a>
+  <ul class="collapse">
+  <li><a href="#public-demonstrator-deployment" id="toc-public-demonstrator-deployment" class="nav-link" data-scroll-target="#public-demonstrator-deployment">Public Demonstrator Deployment</a></li>
+  <li><a href="#community-dictionary-ecosystem" id="toc-community-dictionary-ecosystem" class="nav-link" data-scroll-target="#community-dictionary-ecosystem">Community Dictionary Ecosystem</a></li>
+  <li><a href="#consensus-learning" id="toc-consensus-learning" class="nav-link" data-scroll-target="#consensus-learning">Consensus Learning</a></li>
+  <li><a href="#soft-learning" id="toc-soft-learning" class="nav-link" data-scroll-target="#soft-learning">Soft Learning</a></li>
+  <li><a href="#large-scale-benchmarking" id="toc-large-scale-benchmarking" class="nav-link" data-scroll-target="#large-scale-benchmarking">Large-Scale Benchmarking</a></li>
+  </ul></li>
+  <li><a href="#long-term-vision" id="toc-long-term-vision" class="nav-link" data-scroll-target="#long-term-vision">Long-Term Vision</a></li>
+  <li><a href="#release-philosophy" id="toc-release-philosophy" class="nav-link" data-scroll-target="#release-philosophy">Release Philosophy</a></li>
+  <li><a href="#upcoming-releases" id="toc-upcoming-releases" class="nav-link" data-scroll-target="#upcoming-releases">Upcoming Releases</a>
+  <ul class="collapse">
+  <li><a href="#core-v1.1" id="toc-core-v1.1" class="nav-link" data-scroll-target="#core-v1.1">CORE v1.1</a></li>
+  <li><a href="#core-v1.2" id="toc-core-v1.2" class="nav-link" data-scroll-target="#core-v1.2">CORE v1.2</a></li>
+  <li><a href="#core-v1.3" id="toc-core-v1.3" class="nav-link" data-scroll-target="#core-v1.3">CORE v1.3</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -166,9 +209,192 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Documentation under development.</p>
+<p>This page summarises major developments, releases, and milestones in the evolution of CORE.</p>
+<p>CORE is developed as research software and therefore evolves through both methodological and technical improvements.</p>
+<hr>
+<section id="core-v1.0.0-first-stable-release" class="level1">
+<h1>CORE v1.0.0 — First Stable Release</h1>
+<p><strong>Status:</strong> Stable Release</p>
+<p>CORE v1.0.0 represents the first stable public release of the Corporate Entity Resolution Engine.</p>
+<p>This release establishes the methodological and architectural foundations of the framework and marks the transition from prototype development to research software infrastructure.</p>
+<section id="major-features" class="level2">
+<h2 class="anchored" data-anchor-id="major-features">Major Features</h2>
+<section id="entity-resolution-engine" class="level3">
+<h3 class="anchored" data-anchor-id="entity-resolution-engine">Entity Resolution Engine</h3>
+<ul>
+<li>Exact matching</li>
+<li>Suffix normalisation</li>
+<li>Alias resolution</li>
+<li>Candidate generation</li>
+<li>Similarity scoring</li>
+</ul>
+</section>
+<section id="review-queue" class="level3">
+<h3 class="anchored" data-anchor-id="review-queue">Review Queue</h3>
+<ul>
+<li>Transparent expert review</li>
+<li>Explicit uncertainty preservation</li>
+<li>Human validation workflow</li>
+<li>Review decision export</li>
+</ul>
+</section>
+<section id="learning-layer-infrastructure" class="level3">
+<h3 class="anchored" data-anchor-id="learning-layer-infrastructure">Learning Layer Infrastructure</h3>
+<ul>
+<li>Persistent knowledge storage</li>
+<li>Learning dictionary support</li>
+<li>Reviewer metadata preservation</li>
+<li>Knowledge continuity infrastructure</li>
+</ul>
+</section>
+<section id="dictionary-infrastructure" class="level3">
+<h3 class="anchored" data-anchor-id="dictionary-infrastructure">Dictionary Infrastructure</h3>
+<ul>
+<li>Core dictionaries</li>
+<li>Project dictionaries</li>
+<li>Community dictionaries</li>
+<li>Custom dictionaries</li>
+</ul>
+</section>
+<section id="documentation" class="level3">
+<h3 class="anchored" data-anchor-id="documentation">Documentation</h3>
+<ul>
+<li>Philosophy</li>
+<li>Architecture</li>
+<li>Workflow</li>
+<li>Methodology</li>
+<li>Review Queue</li>
+<li>Learning Layer</li>
+</ul>
+</section>
+<section id="research-software-infrastructure" class="level3">
+<h3 class="anchored" data-anchor-id="research-software-infrastructure">Research Software Infrastructure</h3>
+<ul>
+<li>GitHub repository</li>
+<li>Software audit</li>
+<li>Integration testing</li>
+<li>Documentation website</li>
+</ul>
+<hr>
+</section>
+</section>
+</section>
+<section id="core-v1.0.1-documentation-website" class="level1">
+<h1>CORE v1.0.1 — Documentation Website</h1>
+<p><strong>Status:</strong> Completed</p>
+<p>This release introduced the first public documentation website built with Quarto.</p>
+<p>Major additions included:</p>
+<ul>
+<li>landing page</li>
+<li>methodological documentation</li>
+<li>tutorials</li>
+<li>installation guidance</li>
+<li>release tracking</li>
+</ul>
+<hr>
+</section>
+<section id="core-v1.0.2-interactive-demonstrator" class="level1">
+<h1>CORE v1.0.2 — Interactive Demonstrator</h1>
+<p><strong>Status:</strong> Completed</p>
+<p>This release introduced the first interactive Shiny demonstrator running the real CORE pipeline.</p>
+<p>Features include:</p>
+<ul>
+<li>demonstration mode</li>
+<li>research mode</li>
+<li>interactive review queue</li>
+<li>diagnostics panel</li>
+<li>review decisions</li>
+<li>learning integration</li>
+<li>decision export</li>
+</ul>
+<p>Importantly, the demonstrator executes the actual CORE workflow rather than a simplified example implementation.</p>
+<hr>
+</section>
+<section id="current-development-priorities" class="level1">
+<h1>Current Development Priorities</h1>
+<p>Current priorities focus on expanding the surrounding research software ecosystem rather than redesigning the matching engine.</p>
+<section id="public-demonstrator-deployment" class="level2">
+<h2 class="anchored" data-anchor-id="public-demonstrator-deployment">Public Demonstrator Deployment</h2>
+<p>Deployment of the Shiny demonstrator for public access.</p>
+</section>
+<section id="community-dictionary-ecosystem" class="level2">
+<h2 class="anchored" data-anchor-id="community-dictionary-ecosystem">Community Dictionary Ecosystem</h2>
+<p>Support for reusable and community-maintained dictionaries.</p>
+</section>
+<section id="consensus-learning" class="level2">
+<h2 class="anchored" data-anchor-id="consensus-learning">Consensus Learning</h2>
+<p>Development of consensus-based activation mechanisms for preserved scientific knowledge.</p>
+</section>
+<section id="soft-learning" class="level2">
+<h2 class="anchored" data-anchor-id="soft-learning">Soft Learning</h2>
+<p>Integration of validated knowledge through score adjustments and review prioritisation.</p>
+</section>
+<section id="large-scale-benchmarking" class="level2">
+<h2 class="anchored" data-anchor-id="large-scale-benchmarking">Large-Scale Benchmarking</h2>
+<p>Performance evaluation across multiple domains and large datasets.</p>
+<hr>
+</section>
+</section>
+<section id="long-term-vision" class="level1">
+<h1>Long-Term Vision</h1>
+<p>The long-term objective of CORE extends beyond entity resolution algorithms.</p>
+<p>The project aims to become a complete research software platform supporting:</p>
+<ul>
+<li>transparent workflows;</li>
+<li>reviewable scientific judgement;</li>
+<li>reproducible empirical research;</li>
+<li>cumulative scientific knowledge.</li>
+</ul>
+<p>Future development areas include:</p>
+<ul>
+<li>collaborative review workflows;</li>
+<li>community-maintained knowledge bases;</li>
+<li>cross-domain entity resolution;</li>
+<li>open scientific infrastructure.</li>
+</ul>
+<hr>
+</section>
+<section id="release-philosophy" class="level1">
+<h1>Release Philosophy</h1>
+<p>CORE follows a methodology-first development philosophy.</p>
+<p>Major releases correspond to meaningful methodological or architectural milestones rather than isolated software features.</p>
+<p>The objective is not merely to add functionality, but to strengthen the framework’s contribution to transparent and reproducible empirical research.</p>
+<hr>
+</section>
+<section id="upcoming-releases" class="level1">
+<h1>Upcoming Releases</h1>
+<section id="core-v1.1" class="level2">
+<h2 class="anchored" data-anchor-id="core-v1.1">CORE v1.1</h2>
+<ul>
+<li>Public demonstrator deployment</li>
+<li>Improved user experience</li>
+<li>Community documentation</li>
+</ul>
+</section>
+<section id="core-v1.2" class="level2">
+<h2 class="anchored" data-anchor-id="core-v1.2">CORE v1.2</h2>
+<ul>
+<li>Consensus learning infrastructure</li>
+<li>Collaborative review workflows</li>
+</ul>
+</section>
+<section id="core-v1.3" class="level2">
+<h2 class="anchored" data-anchor-id="core-v1.3">CORE v1.3</h2>
+<ul>
+<li>Soft learning integration</li>
+<li>Knowledge-aware scoring</li>
+</ul>
+<hr>
+<p>For a complete technical change history please consult:</p>
+<ul>
+<li><code>NEWS.md</code></li>
+<li>GitHub Releases</li>
+<li>Repository commit history</li>
+</ul>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

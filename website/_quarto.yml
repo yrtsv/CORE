@@ -22,8 +22,12 @@ website:
         text: Methodology
       - href: tutorials.qmd
         text: Tutorials
+      - href: demo.qmd
+        text: Demonstrator
       - href: news.qmd
         text: News
+      - text: Feedback
+        href: https://github.com/yrtsv/CORE/issues
 
     right:
       - icon: github
@@ -31,7 +35,7 @@ website:
 
 format:
   html:
-    theme: cosmo
+    theme: flatly
     toc: true
     code-copy: true
     code-overflow: wrap

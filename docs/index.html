@@ -42,7 +42,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-e9072c35d400738dd8f5400c9614cb45.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-661d3141088f8644463b6179fa03ec3d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -120,8 +120,16 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Tutorials</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./demo.html"> 
+<span class="menu-text">Demonstrator</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./news.html"> 
 <span class="menu-text">News</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://github.com/yrtsv/CORE/issues"> 
+<span class="menu-text">Feedback</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -141,21 +149,9 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#transparent.-reviewable.-reproducible.-cumulative." id="toc-transparent.-reviewable.-reproducible.-cumulative." class="nav-link active" data-scroll-target="#transparent.-reviewable.-reproducible.-cumulative.">Transparent. Reviewable. Reproducible. Cumulative.</a></li>
-  <li><a href="#core-principles" id="toc-core-principles" class="nav-link" data-scroll-target="#core-principles">Core Principles</a></li>
-  <li><a href="#framework-components" id="toc-framework-components" class="nav-link" data-scroll-target="#framework-components">Framework Components</a></li>
-  <li><a href="#documentation" id="toc-documentation" class="nav-link" data-scroll-target="#documentation">Documentation</a></li>
-  <li><a href="#source-code" id="toc-source-code" class="nav-link" data-scroll-target="#source-code">Source Code</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -164,7 +160,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta column-page-left">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -178,44 +174,100 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="transparent.-reviewable.-reproducible.-cumulative." class="level2">
 <h2 class="anchored" data-anchor-id="transparent.-reviewable.-reproducible.-cumulative.">Transparent. Reviewable. Reproducible. Cumulative.</h2>
-<p>CORE is an open research software framework designed to support transparent, reviewable, reproducible, and cumulative entity resolution in empirical research.</p>
-<p>Rather than treating entity resolution as a disposable data-cleaning task, CORE treats entity resolution as a scientific process in which computational methods, expert judgement, and validated knowledge work together to produce trustworthy analytical datasets.</p>
+<blockquote class="blockquote">
+<p><strong>Entity resolution does not merely produce analytical datasets.</strong></p>
+<p><strong>It produces scientific knowledge.</strong></p>
+</blockquote>
+<p align="center">
+<img src="assets/core_hero_figure.svg" alt="CORE Framework Overview" width="700">
+</p>
+<div style="text-align: center; margin-top: 28px; margin-bottom: 40px;">
+<p><a href="https://corematch.shinyapps.io/core/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" style="padding: 14px 28px; font-size: 1.15rem;"></a></p><a href="https://corematch.shinyapps.io/core/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" style="padding: 14px 28px; font-size: 1.15rem;">
+<p>🚀 Launch Live Demonstrator</p>
+</a><p><a href="https://corematch.shinyapps.io/core/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" style="padding: 14px 28px; font-size: 1.15rem;"></a></p>
+</div>
+<p>CORE is an open-source research software framework designed to support transparent, reviewable, reproducible, and cumulative entity resolution in empirical research.</p>
+<p>Rather than treating entity resolution as a disposable data-cleaning task, CORE approaches entity resolution as a scientific process in which computational methods, expert judgement, and validated knowledge work together to produce trustworthy analytical datasets.</p>
+<p>Originally developed for corporate entity resolution, CORE has been intentionally designed as a general methodology capable of supporting transparent entity resolution across a broad range of empirical research domains.</p>
+<hr>
+</section>
+<section id="why-core" class="level2">
+<h2 class="anchored" data-anchor-id="why-core">Why CORE?</h2>
+<p>Traditional entity resolution workflows often end once a matched dataset has been produced.</p>
+<p>Intermediate decisions, reviewer knowledge, and methodological reasoning frequently disappear with the project, forcing future researchers to reconstruct work that has already been completed.</p>
+<p>CORE adopts a different philosophy.</p>
+<blockquote class="blockquote">
+<p><strong>Validated entity resolution decisions are scientific knowledge and should be preserved rather than discarded at the conclusion of individual research projects.</strong></p>
+</blockquote>
+<p>The framework therefore combines:</p>
+<ul>
+<li>transparent computational workflows;</li>
+<li>explicit expert review through the Review Queue;</li>
+<li>preservation of validated scientific judgement;</li>
+<li>reusable knowledge that supports future empirical research.</li>
+</ul>
+<hr>
 </section>
 <section id="core-principles" class="level2">
 <h2 class="anchored" data-anchor-id="core-principles">Core Principles</h2>
+<p>CORE has been designed around five methodological principles:</p>
 <ul>
-<li>Transparency</li>
-<li>Reproducibility</li>
-<li>Reviewability</li>
-<li>Knowledge Preservation</li>
+<li><strong>Transparency</strong></li>
+<li><strong>Scientific Judgement</strong></li>
+<li><strong>Reproducibility</strong></li>
+<li><strong>Knowledge Preservation</strong></li>
+<li><strong>Methodological Continuity</strong></li>
 </ul>
+<p>Together, these principles establish entity resolution as a documented and reproducible scientific activity rather than a project-specific preprocessing task.</p>
+<hr>
 </section>
 <section id="framework-components" class="level2">
 <h2 class="anchored" data-anchor-id="framework-components">Framework Components</h2>
-<ul>
-<li>Entity Resolution Engine</li>
-<li>Review Queue</li>
-<li>Learning Layer</li>
-<li>Scientific Workflow</li>
-<li>Research Software Infrastructure</li>
-</ul>
+<p>The CORE ecosystem currently consists of six major components:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 55%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Component</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Entity Resolution Engine</td>
+<td>Computational entity resolution workflow</td>
+</tr>
+<tr class="even">
+<td>Review Queue</td>
+<td>Transparent expert evaluation of uncertain matches</td>
+</tr>
+<tr class="odd">
+<td>Learning Layer</td>
+<td>Preservation of validated review history</td>
+</tr>
+<tr class="even">
+<td>Dictionary Infrastructure</td>
+<td>Reusable project and community knowledge</td>
+</tr>
+<tr class="odd">
+<td>Documentation Portal</td>
+<td>Methodological and architectural documentation</td>
+</tr>
+<tr class="even">
+<td>Research Software Infrastructure</td>
+<td>Reproducibility and software quality support</td>
+</tr>
+</tbody>
+</table>
+<hr>
 </section>
-<section id="documentation" class="level2">
-<h2 class="anchored" data-anchor-id="documentation">Documentation</h2>
-<p>The current documentation includes:</p>
-<ul>
-<li>Philosophy</li>
-<li>Architecture</li>
-<li>Workflow</li>
-<li>Review Queue</li>
-<li>Learning Layer</li>
-<li>Methodology</li>
-</ul>
-</section>
-<section id="source-code" class="level2">
-<h2 class="anchored" data-anchor-id="source-code">Source Code</h2>
-<p>GitHub Repository:</p>
-<p>https://github.com/yrtsv/CORE</p>
+<section id="methodological-workflow" class="level2">
+<h2 class="anchored" data-anchor-id="methodological-workflow">Methodological Workflow</h2>
+<p>CORE implements a six-stage research workflow.</p>
+<p>```text Raw Data ↓ Data Acquisition ↓ Data Preparation ↓ Entity Resolution ↓ Expert Validation ↓ Knowledge Preservation ↓ Analysis-Ready Outputs</p>
 
 
 </section>

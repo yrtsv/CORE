@@ -1,4 +1,30 @@
 ---
 title: "Installation"
+toc: true
 ---
-Documentation under development.
+
+This page explains how to install and configure CORE.
+
+CORE is distributed as an open-source research software framework and can be installed directly from the GitHub repository.
+
+---
+
+# Requirements
+
+CORE currently requires:
+
+- R (>= 4.3 recommended)
+- RStudio (recommended)
+- Git
+- Internet access for package installation
+
+The framework has been developed and tested on Windows, Linux, and macOS.
+
+---
+
+# Step 1 — Clone the Repository
+
+Clone the repository from GitHub:
+
+```bash
+git clone https://github.com/yrtsv/CORE.git

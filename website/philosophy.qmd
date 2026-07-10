@@ -1,4 +1,180 @@
 ---
 title: "Philosophy"
+toc: true
 ---
-Documentation under development.
+## The Philosophy Behind CORE: Entity resolution is not merely a technical problem.
+
+Traditional entity resolution workflows often treat matching as a temporary preprocessing task whose only objective is to produce an analysis-ready dataset.
+
+Once matching has been completed, the dataset survives but the reasoning, assumptions, and expert judgement required to construct it frequently disappear with the project itself.
+
+CORE adopts a fundamentally different perspective.
+
+> **Entity resolution does not merely produce analytical datasets.**
+>
+> **It produces scientific knowledge.**
+
+The framework has therefore been designed around the idea that validated entity resolution decisions should be preserved, documented, and made available for future empirical research rather than discarded at the conclusion of individual projects.
+
+---
+
+# The Missing Continuity
+
+A recurring problem in empirical research is the absence of continuity between projects.
+
+Researchers often reconstruct decisions that previous projects have already resolved:
+
+- historical company identities;
+- mergers and acquisitions;
+- organisational restructurings;
+- naming conventions;
+- abbreviations and aliases;
+- domain-specific interpretation.
+
+The resulting dataset survives.
+
+The knowledge required to construct it does not.
+
+CORE was created to address this problem.
+
+---
+
+# Scientific Knowledge
+
+Within CORE, validated entity resolution decisions are regarded as scientific knowledge.
+
+Scientific knowledge differs fundamentally from computational predictions.
+
+A validated decision may include:
+
+- documented expert judgement;
+- contextual interpretation;
+- historical information;
+- domain expertise;
+- methodological reasoning.
+
+These forms of knowledge often cannot be reconstructed from similarity scores alone.
+
+Consequently, CORE treats validated decisions as scientific outputs rather than temporary intermediate objects.
+
+---
+
+# Computational Evidence and Scientific Judgement
+
+CORE does not reject computational methods.
+
+On the contrary, computational evidence forms the foundation of the framework.
+
+However, computational evidence alone is not always sufficient to support reliable scientific conclusions.
+
+The framework therefore combines:
+
+```text
+Computational Evidence
+            +
+Scientific Judgement
+            +
+Knowledge Preservation
+            ↓
+Transparent Entity Resolution
+```
+
+This approach allows computational efficiency and scientific reasoning to complement rather than replace one another.
+
+---
+
+# Preserving Uncertainty
+
+Many matching systems attempt to eliminate uncertainty by increasing algorithmic complexity or lowering the threshold for automatic decisions.
+
+CORE adopts a different position.
+
+> **Uncertainty should be preserved whenever computational evidence alone cannot support reliable scientific conclusions.**
+
+Uncertain observations therefore enter the Review Queue rather than being forced into premature acceptance or rejection.
+
+The objective is not to maximise automation.
+
+The objective is to maximise scientific reliability.
+
+---
+
+# Knowledge Preservation
+
+Scientific knowledge should not disappear at the conclusion of a project.
+
+Validated decisions generated through expert review become part of the Learning Layer where they remain available for:
+
+- future investigation;
+- methodological transparency;
+- scientific continuity;
+- cumulative knowledge development.
+
+Knowledge therefore becomes a reusable scientific asset rather than a temporary by-product of data preparation.
+
+---
+
+# Scientific Learning
+
+The Learning Layer should not be confused with machine learning or autonomous decision-making.
+
+Within CORE, learning is understood in its scientific sense:
+
+> Knowledge grows because researchers evaluate uncertainty, document their reasoning, and preserve validated conclusions.
+
+The framework itself does not generate new scientific knowledge independently.
+
+---
+
+# Learning Philosophy
+
+Knowledge preserved within the Learning Layer does not automatically influence future workflows.
+
+A single reviewer may make mistakes.
+
+Project-specific assumptions may later prove incorrect.
+
+New evidence may challenge earlier conclusions.
+
+CORE therefore distinguishes three stages of knowledge integration.
+
+## Passive Learning
+
+Validated decisions are preserved but do not influence computational procedures.
+
+## Consensus Learning
+
+Knowledge becomes eligible for influence only after sufficient independent validation has accumulated.
+
+## Soft Learning
+
+Validated knowledge influences similarity scores and review priorities rather than producing automatic decisions.
+
+This approach protects future investigations from isolated reviewer errors while preserving methodological continuity.
+
+---
+
+# The Long-Term Vision
+
+The long-term objective of CORE extends beyond entity resolution algorithms.
+
+The project seeks to establish an open research software ecosystem supporting:
+
+- transparent workflows;
+- reviewable scientific judgement;
+- reproducible empirical research;
+- cumulative knowledge development.
+
+From this perspective, entity resolution becomes more than a preprocessing task.
+
+It becomes a scientific activity whose outputs deserve preservation, transparency, and continued scrutiny.
+
+---
+
+# Final Principle
+
+> **Validated entity resolution decisions are scientific knowledge.**
+>
+> **Scientific knowledge should be preserved.**
+
+This principle represents the philosophical foundation upon which CORE has been built.

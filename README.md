@@ -2,6 +2,10 @@
 
 > **An open-source research software framework for transparent, reviewable, reproducible, and cumulative entity resolution.**
 
+> **Entity resolution does not merely produce analytical datasets.**
+>
+> **It produces scientific knowledge.**
+
 <p align="center">
 
 ![Version](https://img.shields.io/badge/version-v1.0.0-blue)
@@ -22,11 +26,11 @@
 
 ## Overview
 
-The **Corporate Entity Resolution Engine (CORE)** is an open-source research software framework designed to support transparent, reviewable, and reproducible entity resolution in empirical research.
+The **Corporate Entity Resolution Engine (CORE)** is an open-source research software framework designed to support transparent, reviewable, reproducible, and cumulative entity resolution in empirical research.
 
 Rather than treating entity resolution as a disposable data-cleaning task, CORE treats it as a scientific process in which computational methods, expert judgement, and validated knowledge work together to produce trustworthy analytical datasets.
 
-Originally developed for corporate entity resolution, the framework has been intentionally designed as a general methodology that can support transparent entity resolution across a broad range of empirical research domains.
+Originally developed for corporate entity resolution, the framework has been intentionally designed as a general methodology capable of supporting transparent entity resolution across a broad range of empirical research domains.
 
 ---
 
@@ -38,14 +42,13 @@ CORE adopts a different philosophy.
 
 > **Validated entity resolution decisions are scientific knowledge and should be preserved rather than discarded at the end of individual research projects.**
 
-This philosophy is reflected throughout the framework.
-
 Instead of relying exclusively on automated matching, CORE combines:
 
 - transparent computational workflows;
 - documented expert review through the Review Queue;
 - preservation of validated scientific judgement through the Learning Layer;
-- reusable knowledge that supports future empirical research.
+- reusable knowledge that supports future empirical research;
+- explicit separation between computational evidence and scientific judgement.
 
 The result is a research software framework that treats entity resolution as a documented and reproducible scientific methodology rather than a project-specific preprocessing task.
 
@@ -55,15 +58,16 @@ The result is a research software framework that treats entity resolution as a d
 
 CORE has been designed as a modular research software framework rather than a collection of matching scripts.
 
-### Research methodology
+### Research Methodology
 
 - Transparent and reproducible entity resolution workflows
 - Explicit integration of computational methods and scientific judgement
 - Preservation of validated knowledge through the Learning Layer
 - Reviewable decision-making through the Review Queue
 - Methodological continuity across independent research projects
+- Cumulative knowledge preservation
 
-### Software architecture
+### Software Architecture
 
 - Modular architecture with clearly separated responsibilities
 - Independent matching engines and reusable workflow components
@@ -71,7 +75,7 @@ CORE has been designed as a modular research software framework rather than a co
 - Transparent intermediate outputs throughout the workflow
 - Comprehensive testing and software quality checks
 
-### Research outputs
+### Research Outputs
 
 - Analysis-ready matched datasets
 - Reproducible entity resolution workflows
@@ -83,25 +87,25 @@ CORE has been designed as a modular research software framework rather than a co
 
 ## Installation
 
-Clone the repository.
+Clone the repository:
 
 ```bash
-git clone https://github.com/YurtsevUymaz/CORE.git
+git clone https://github.com/yrtsv/CORE.git
 ```
 
-Move into the project directory.
+Move into the project directory:
 
 ```bash
 cd CORE
 ```
 
-Install the required R packages.
+Install required packages:
 
 ```r
 source("R/01_install_packages.R")
 ```
 
-Load the CORE environment.
+Load the CORE environment:
 
 ```r
 source("R/02_load_packages.R")
@@ -113,7 +117,7 @@ CORE is now ready for use.
 
 ## Quick Start
 
-A typical CORE workflow consists of six methodological stages.
+A typical CORE workflow consists of seven methodological stages:
 
 ```text
 1. Read reference data
@@ -121,10 +125,11 @@ A typical CORE workflow consists of six methodological stages.
 3. Prepare data
 4. Run entity resolution
 5. Review uncertain matches
-6. Export analysis-ready outputs
+6. Preserve validated knowledge
+7. Export analysis-ready outputs
 ```
 
-The workflow can be initiated by sourcing the project modules.
+Typical execution:
 
 ```r
 # Project configuration
@@ -149,14 +154,14 @@ CORE automatically generates transparent intermediate outputs together with repr
 
 ## Repository Structure
 
-The repository has been organised to separate methodological components, software infrastructure, documentation, visual assets, and supporting resources.
-
 ```text
 CORE/
 │
 ├── assets/
-│   ├── core_hero_figure.svg
-│   └── core_hero_figure.png
+│
+├── app/
+│
+├── website/
 │
 ├── R/
 │   ├── engines/
@@ -191,20 +196,20 @@ CORE is supported by a collection of complementary design documents.
 
 | Document | Purpose |
 |----------|---------|
-| **[The Philosophy Behind CORE](docs/The_Philosophy_Behind_CORE.md)** | Explains the scientific motivation and conceptual foundations of CORE. |
-| **[Architecture](docs/Architecture.md)** | Describes the software architecture and design principles. |
-| **[Workflow](docs/Workflow.md)** | Explains how information moves through the complete entity resolution process. |
-| **[Methodology](docs/Methodology.md)** | Describes the methodological framework implemented throughout CORE. |
-| **[Review Queue](docs/Review_Queue.md)** | Explains how uncertain matches are evaluated through expert review. |
-| **[Learning Layer](docs/Learning_Layer.md)** | Describes how validated scientific judgement is preserved and reused. |
+| **The Philosophy Behind CORE** | Scientific motivation and conceptual foundations |
+| **Architecture** | Software architecture and design principles |
+| **Workflow** | Complete entity resolution process |
+| **Methodology** | Methodological framework |
+| **Review Queue** | Expert review and uncertainty management |
+| **Learning Layer** | Preservation and reuse of scientific judgement |
 
-Although each document focuses on a different aspect of the framework, together they describe the complete methodological and architectural design of CORE.
+Together, these documents describe the complete methodological and architectural design of CORE.
 
 ---
 
 ## Documentation Roadmap
 
-Researchers may find the following reading order helpful.
+Suggested reading order:
 
 ```text
 The Philosophy Behind CORE
@@ -216,28 +221,45 @@ The Philosophy Behind CORE
         Workflow
             │
             ▼
+      Methodology
+            │
+            ▼
       Review Queue
             │
             ▼
      Learning Layer
-            │
-            ▼
-       Methodology
 ```
-
-Developers who wish to understand the software implementation may alternatively begin with **Architecture** before exploring the remaining documentation.
 
 ---
 
-## Citation
+## Demonstrator
 
-If CORE contributes to your research, please cite the software using the citation metadata provided in the repository.
+CORE includes an interactive Shiny demonstrator that executes the real CORE pipeline through a graphical interface.
 
-Citation information is available in:
+Current capabilities include:
 
-- **CITATION.cff** (GitHub citation support)
+- End-to-end execution of the CORE workflow
+- Interactive Review Queue
+- Match diagnostics and explainability
+- Human review decisions
+- Learning Layer integration
+- Exportable review decisions
 
-A DOI and additional citation formats will be added following the first archived software release.
+The demonstrator is intended as a research interface rather than a simplified matching application.
+
+---
+
+## Documentation Website
+
+CORE includes a dedicated documentation website built with Quarto.
+
+The website provides:
+
+- installation instructions;
+- methodological documentation;
+- architectural overview;
+- tutorials and examples;
+- release notes and project news.
 
 ---
 
@@ -247,61 +269,86 @@ A DOI and additional citation formats will be added following the first archived
 
 CORE v1.0.0 represents the first stable public release of the Corporate Entity Resolution Engine.
 
-The core entity resolution framework is considered stable and future development will focus on expanding the surrounding research software platform rather than redesigning the underlying architecture.
+Completed milestones include:
 
-Current development priorities include:
-
-- GitHub repository development
+- Stable entity resolution engine
+- Review Queue
+- Learning Layer infrastructure
+- Dictionary management system
 - Documentation website
-- Interactive Shiny interface
-- Community dictionary ecosystem
-- Large-scale benchmarking
-- Research software infrastructure
+- Interactive Shiny demonstrator
+- Software quality audit
+- GitHub repository infrastructure
+
+---
+
+## Learning Philosophy
+
+Knowledge preserved through the Learning Layer does not automatically influence future entity resolution decisions.
+
+CORE currently distinguishes three stages of knowledge integration.
+
+### Passive Learning
+
+Validated decisions are preserved but do not influence computational procedures.
+
+### Consensus Learning
+
+Knowledge becomes eligible for methodological influence only after sufficient independent scientific validation has accumulated.
+
+### Soft Learning
+
+Validated knowledge influences future workflows through transparent score adjustments and review prioritisation rather than automatic acceptance or rejection.
+
+This approach protects future investigations from isolated reviewer errors while preserving the cumulative development of scientific knowledge.
 
 ---
 
 ## Development Roadmap
 
-The long-term vision of CORE extends beyond entity resolution algorithms.
-
-The project aims to become a complete open research software platform supporting transparent, reviewable, and reproducible entity resolution.
-
 ### CORE v1.0
 
 - Stable entity resolution engine
-- Modular architecture
 - Review Queue
 - Learning Layer
-- Dictionary management
-- Integration tests
-- Software quality audit
+- Documentation website
+- Interactive Shiny demonstrator
 
 ### CORE v1.1
 
-- Professional GitHub repository
-- Community documentation
+- Public demonstrator deployment
 - Improved user experience
+- Community documentation
 
 ### CORE v1.2
 
-- Documentation website
+- Consensus learning infrastructure
+- Collaborative review workflows
 
 ### CORE v1.3
 
-- Interactive Shiny application
-
-### CORE v1.4
-
-- Large-scale benchmarking
-- Performance optimisation
+- Soft learning integration
+- Knowledge-aware scoring
 
 ### Long-Term Vision
 
 - Community-maintained dictionaries
-- Collaborative review workflows
-- Research software platform
 - Cross-domain entity resolution
 - Open scientific ecosystem
+- Collaborative scientific review
+- Research software platform
+
+---
+
+## Citation
+
+If CORE contributes to your research, please cite the software using the citation metadata provided in the repository.
+
+Citation information is available in:
+
+- `CITATION.cff`
+
+A DOI and additional citation formats will be added following the first archived software release.
 
 ---
 
@@ -319,15 +366,15 @@ Examples include:
 - User interface improvements
 - Pull requests
 
-Please read **[CONTRIBUTING.md](CONTRIBUTING.md)** before contributing.
+Please read `CONTRIBUTING.md` before contributing.
 
 ---
 
 ## License
 
-CORE is released under the **MIT License**.
+CORE is released under the MIT License.
 
-See **[LICENSE](LICENSE)** for details.
+See `LICENSE` for details.
 
 ---
 

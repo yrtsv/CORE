@@ -4,90 +4,412 @@
     "href": "workflow.html",
     "title": "Workflow",
     "section": "",
-    "text": "Documentation under development."
+    "text": "CORE transforms heterogeneous raw data into transparent, reviewable, reproducible, and analysis-ready outputs through a sequence of explicit methodological stages.\nRather than combining multiple operations within a single opaque procedure, each stage performs a distinct scientific responsibility while preserving the intermediate information required to understand how final entity resolution decisions have been obtained.\nThe workflow therefore represents more than a computational pipeline.\nIt provides a structured research process in which data preparation, computational evaluation, expert review, knowledge preservation, and output generation remain clearly separated while contributing to a coherent and reproducible methodology."
+  },
+  {
+    "objectID": "workflow.html#from-raw-data-to-scientific-knowledge",
+    "href": "workflow.html#from-raw-data-to-scientific-knowledge",
+    "title": "Workflow",
+    "section": "",
+    "text": "CORE transforms heterogeneous raw data into transparent, reviewable, reproducible, and analysis-ready outputs through a sequence of explicit methodological stages.\nRather than combining multiple operations within a single opaque procedure, each stage performs a distinct scientific responsibility while preserving the intermediate information required to understand how final entity resolution decisions have been obtained.\nThe workflow therefore represents more than a computational pipeline.\nIt provides a structured research process in which data preparation, computational evaluation, expert review, knowledge preservation, and output generation remain clearly separated while contributing to a coherent and reproducible methodology."
+  },
+  {
+    "objectID": "workflow.html#passive-learning",
+    "href": "workflow.html#passive-learning",
+    "title": "Workflow",
+    "section": "Passive Learning",
+    "text": "Passive Learning\nValidated decisions are preserved but do not influence computational procedures."
+  },
+  {
+    "objectID": "workflow.html#consensus-learning",
+    "href": "workflow.html#consensus-learning",
+    "title": "Workflow",
+    "section": "Consensus Learning",
+    "text": "Consensus Learning\nKnowledge becomes eligible for methodological influence only after sufficient independent scientific validation has accumulated."
+  },
+  {
+    "objectID": "workflow.html#soft-learning",
+    "href": "workflow.html#soft-learning",
+    "title": "Workflow",
+    "section": "Soft Learning",
+    "text": "Soft Learning\nValidated knowledge influences future workflows through transparent score adjustments and review prioritisation rather than automatic acceptance or rejection.\nThis approach protects future investigations from isolated reviewer errors while preserving cumulative scientific knowledge."
+  },
+  {
+    "objectID": "workflow.html#sequential",
+    "href": "workflow.html#sequential",
+    "title": "Workflow",
+    "section": "Sequential",
+    "text": "Sequential\nEach stage builds explicitly upon the outputs of the previous stage."
+  },
+  {
+    "objectID": "workflow.html#transparent",
+    "href": "workflow.html#transparent",
+    "title": "Workflow",
+    "section": "Transparent",
+    "text": "Transparent\nIntermediate outputs remain available throughout the workflow."
+  },
+  {
+    "objectID": "workflow.html#reviewable",
+    "href": "workflow.html#reviewable",
+    "title": "Workflow",
+    "section": "Reviewable",
+    "text": "Reviewable\nScientific judgement remains an explicit component of the workflow through the Review Queue."
+  },
+  {
+    "objectID": "workflow.html#reproducible",
+    "href": "workflow.html#reproducible",
+    "title": "Workflow",
+    "section": "Reproducible",
+    "text": "Reproducible\nThe workflow can be repeated and independently verified across different datasets and projects."
+  },
+  {
+    "objectID": "workflow.html#cumulative",
+    "href": "workflow.html#cumulative",
+    "title": "Workflow",
+    "section": "Cumulative",
+    "text": "Cumulative\nValidated knowledge contributes to successive investigations rather than being repeatedly reconstructed."
   },
   {
     "objectID": "philosophy.html",
     "href": "philosophy.html",
     "title": "Philosophy",
     "section": "",
-    "text": "Documentation under development."
+    "text": "Traditional entity resolution workflows often treat matching as a temporary preprocessing task whose only objective is to produce an analysis-ready dataset.\nOnce matching has been completed, the dataset survives but the reasoning, assumptions, and expert judgement required to construct it frequently disappear with the project itself.\nCORE adopts a fundamentally different perspective.\n\nEntity resolution does not merely produce analytical datasets.\nIt produces scientific knowledge.\n\nThe framework has therefore been designed around the idea that validated entity resolution decisions should be preserved, documented, and made available for future empirical research rather than discarded at the conclusion of individual projects."
+  },
+  {
+    "objectID": "philosophy.html#the-philosophy-behind-core-entity-resolution-is-not-merely-a-technical-problem.",
+    "href": "philosophy.html#the-philosophy-behind-core-entity-resolution-is-not-merely-a-technical-problem.",
+    "title": "Philosophy",
+    "section": "",
+    "text": "Traditional entity resolution workflows often treat matching as a temporary preprocessing task whose only objective is to produce an analysis-ready dataset.\nOnce matching has been completed, the dataset survives but the reasoning, assumptions, and expert judgement required to construct it frequently disappear with the project itself.\nCORE adopts a fundamentally different perspective.\n\nEntity resolution does not merely produce analytical datasets.\nIt produces scientific knowledge.\n\nThe framework has therefore been designed around the idea that validated entity resolution decisions should be preserved, documented, and made available for future empirical research rather than discarded at the conclusion of individual projects."
+  },
+  {
+    "objectID": "philosophy.html#passive-learning",
+    "href": "philosophy.html#passive-learning",
+    "title": "Philosophy",
+    "section": "Passive Learning",
+    "text": "Passive Learning\nValidated decisions are preserved but do not influence computational procedures."
+  },
+  {
+    "objectID": "philosophy.html#consensus-learning",
+    "href": "philosophy.html#consensus-learning",
+    "title": "Philosophy",
+    "section": "Consensus Learning",
+    "text": "Consensus Learning\nKnowledge becomes eligible for influence only after sufficient independent validation has accumulated."
+  },
+  {
+    "objectID": "philosophy.html#soft-learning",
+    "href": "philosophy.html#soft-learning",
+    "title": "Philosophy",
+    "section": "Soft Learning",
+    "text": "Soft Learning\nValidated knowledge influences similarity scores and review priorities rather than producing automatic decisions.\nThis approach protects future investigations from isolated reviewer errors while preserving methodological continuity."
   },
   {
     "objectID": "methodology.html",
     "href": "methodology.html",
     "title": "Methodology",
     "section": "",
-    "text": "Documentation under development."
+    "text": "CORE approaches entity resolution as a scientific methodology rather than as a standalone matching algorithm.\nThe framework integrates computational procedures, scientific judgement, expert review, and knowledge preservation into a coherent methodological system that supports transparent and reproducible empirical research.\nFrom this perspective, entity resolution extends beyond identifying correspondences between records.\nIt includes:\n\ndata preparation;\ncomputational evaluation;\nexpert review;\nknowledge preservation;\nproduction of analysis-ready datasets.\n\nEach of these activities contributes to the scientific validity of empirical research."
+  },
+  {
+    "objectID": "methodology.html#entity-resolution-as-research-methodology",
+    "href": "methodology.html#entity-resolution-as-research-methodology",
+    "title": "Methodology",
+    "section": "",
+    "text": "CORE approaches entity resolution as a scientific methodology rather than as a standalone matching algorithm.\nThe framework integrates computational procedures, scientific judgement, expert review, and knowledge preservation into a coherent methodological system that supports transparent and reproducible empirical research.\nFrom this perspective, entity resolution extends beyond identifying correspondences between records.\nIt includes:\n\ndata preparation;\ncomputational evaluation;\nexpert review;\nknowledge preservation;\nproduction of analysis-ready datasets.\n\nEach of these activities contributes to the scientific validity of empirical research."
+  },
+  {
+    "objectID": "methodology.html#transparency",
+    "href": "methodology.html#transparency",
+    "title": "Methodology",
+    "section": "Transparency",
+    "text": "Transparency\nEvery important methodological decision remains observable and open to scientific inspection.\nResearchers are able to inspect intermediate outputs, review decisions, and understand how final correspondences were established."
+  },
+  {
+    "objectID": "methodology.html#scientific-judgement",
+    "href": "methodology.html#scientific-judgement",
+    "title": "Methodology",
+    "section": "Scientific Judgement",
+    "text": "Scientific Judgement\nComputational procedures support expert reasoning but do not replace it whenever uncertainty remains.\nScientific judgement therefore remains an explicit component of the framework rather than an undocumented correction performed outside the software."
+  },
+  {
+    "objectID": "methodology.html#reproducibility",
+    "href": "methodology.html#reproducibility",
+    "title": "Methodology",
+    "section": "Reproducibility",
+    "text": "Reproducibility\nEntity resolution decisions are documented in a manner that allows independent verification and future replication.\nReproducibility within CORE extends beyond producing identical analytical datasets.\nThe framework seeks to preserve the reasoning through which those datasets were constructed."
+  },
+  {
+    "objectID": "methodology.html#knowledge-preservation",
+    "href": "methodology.html#knowledge-preservation",
+    "title": "Methodology",
+    "section": "Knowledge Preservation",
+    "text": "Knowledge Preservation\nValidated scientific judgement is preserved beyond individual projects so that future investigations may benefit from previous empirical evaluation.\nKnowledge generated during entity resolution therefore becomes a reusable scientific asset rather than a temporary by-product of data preparation."
+  },
+  {
+    "objectID": "methodology.html#methodological-continuity",
+    "href": "methodology.html#methodological-continuity",
+    "title": "Methodology",
+    "section": "Methodological Continuity",
+    "text": "Methodological Continuity\nEntity resolution is regarded as a cumulative research activity in which validated knowledge contributes to successive investigations rather than being repeatedly reconstructed.\nScientific knowledge therefore accumulates across projects rather than disappearing at the conclusion of individual studies."
+  },
+  {
+    "objectID": "methodology.html#passive-learning",
+    "href": "methodology.html#passive-learning",
+    "title": "Methodology",
+    "section": "Passive Learning",
+    "text": "Passive Learning\nValidated decisions are preserved but do not influence computational procedures."
+  },
+  {
+    "objectID": "methodology.html#consensus-learning",
+    "href": "methodology.html#consensus-learning",
+    "title": "Methodology",
+    "section": "Consensus Learning",
+    "text": "Consensus Learning\nKnowledge becomes eligible for methodological influence only after sufficient independent scientific validation has accumulated."
+  },
+  {
+    "objectID": "methodology.html#soft-learning",
+    "href": "methodology.html#soft-learning",
+    "title": "Methodology",
+    "section": "Soft Learning",
+    "text": "Soft Learning\nValidated knowledge influences future workflows through transparent score adjustments and review prioritisation rather than automatic acceptance or rejection.\nThis approach protects future investigations from isolated reviewer errors while preserving the cumulative development of scientific knowledge."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Corporate Entity Resolution Engine (CORE)",
     "section": "",
-    "text": "CORE is an open research software framework designed to support transparent, reviewable, reproducible, and cumulative entity resolution in empirical research.\nRather than treating entity resolution as a disposable data-cleaning task, CORE treats entity resolution as a scientific process in which computational methods, expert judgement, and validated knowledge work together to produce trustworthy analytical datasets."
+    "text": "Entity resolution does not merely produce analytical datasets.\nIt produces scientific knowledge.\n\n\n\n\n\n\n🚀 Launch Live Demonstrator\n\n\nCORE is an open-source research software framework designed to support transparent, reviewable, reproducible, and cumulative entity resolution in empirical research.\nRather than treating entity resolution as a disposable data-cleaning task, CORE approaches entity resolution as a scientific process in which computational methods, expert judgement, and validated knowledge work together to produce trustworthy analytical datasets.\nOriginally developed for corporate entity resolution, CORE has been intentionally designed as a general methodology capable of supporting transparent entity resolution across a broad range of empirical research domains."
   },
   {
     "objectID": "index.html#transparent.-reviewable.-reproducible.-cumulative.",
     "href": "index.html#transparent.-reviewable.-reproducible.-cumulative.",
     "title": "Corporate Entity Resolution Engine (CORE)",
     "section": "",
-    "text": "CORE is an open research software framework designed to support transparent, reviewable, reproducible, and cumulative entity resolution in empirical research.\nRather than treating entity resolution as a disposable data-cleaning task, CORE treats entity resolution as a scientific process in which computational methods, expert judgement, and validated knowledge work together to produce trustworthy analytical datasets."
+    "text": "Entity resolution does not merely produce analytical datasets.\nIt produces scientific knowledge.\n\n\n\n\n\n\n🚀 Launch Live Demonstrator\n\n\nCORE is an open-source research software framework designed to support transparent, reviewable, reproducible, and cumulative entity resolution in empirical research.\nRather than treating entity resolution as a disposable data-cleaning task, CORE approaches entity resolution as a scientific process in which computational methods, expert judgement, and validated knowledge work together to produce trustworthy analytical datasets.\nOriginally developed for corporate entity resolution, CORE has been intentionally designed as a general methodology capable of supporting transparent entity resolution across a broad range of empirical research domains."
+  },
+  {
+    "objectID": "index.html#why-core",
+    "href": "index.html#why-core",
+    "title": "Corporate Entity Resolution Engine (CORE)",
+    "section": "Why CORE?",
+    "text": "Why CORE?\nTraditional entity resolution workflows often end once a matched dataset has been produced.\nIntermediate decisions, reviewer knowledge, and methodological reasoning frequently disappear with the project, forcing future researchers to reconstruct work that has already been completed.\nCORE adopts a different philosophy.\n\nValidated entity resolution decisions are scientific knowledge and should be preserved rather than discarded at the conclusion of individual research projects.\n\nThe framework therefore combines:\n\ntransparent computational workflows;\nexplicit expert review through the Review Queue;\npreservation of validated scientific judgement;\nreusable knowledge that supports future empirical research."
   },
   {
     "objectID": "index.html#core-principles",
     "href": "index.html#core-principles",
     "title": "Corporate Entity Resolution Engine (CORE)",
     "section": "Core Principles",
-    "text": "Core Principles\n\nTransparency\nReproducibility\nReviewability\nKnowledge Preservation"
+    "text": "Core Principles\nCORE has been designed around five methodological principles:\n\nTransparency\nScientific Judgement\nReproducibility\nKnowledge Preservation\nMethodological Continuity\n\nTogether, these principles establish entity resolution as a documented and reproducible scientific activity rather than a project-specific preprocessing task."
   },
   {
     "objectID": "index.html#framework-components",
     "href": "index.html#framework-components",
     "title": "Corporate Entity Resolution Engine (CORE)",
     "section": "Framework Components",
-    "text": "Framework Components\n\nEntity Resolution Engine\nReview Queue\nLearning Layer\nScientific Workflow\nResearch Software Infrastructure"
+    "text": "Framework Components\nThe CORE ecosystem currently consists of six major components:\n\n\n\n\n\n\n\nComponent\nPurpose\n\n\n\n\nEntity Resolution Engine\nComputational entity resolution workflow\n\n\nReview Queue\nTransparent expert evaluation of uncertain matches\n\n\nLearning Layer\nPreservation of validated review history\n\n\nDictionary Infrastructure\nReusable project and community knowledge\n\n\nDocumentation Portal\nMethodological and architectural documentation\n\n\nResearch Software Infrastructure\nReproducibility and software quality support"
   },
   {
-    "objectID": "index.html#documentation",
-    "href": "index.html#documentation",
+    "objectID": "index.html#methodological-workflow",
+    "href": "index.html#methodological-workflow",
     "title": "Corporate Entity Resolution Engine (CORE)",
-    "section": "Documentation",
-    "text": "Documentation\nThe current documentation includes:\n\nPhilosophy\nArchitecture\nWorkflow\nReview Queue\nLearning Layer\nMethodology"
-  },
-  {
-    "objectID": "index.html#source-code",
-    "href": "index.html#source-code",
-    "title": "Corporate Entity Resolution Engine (CORE)",
-    "section": "Source Code",
-    "text": "Source Code\nGitHub Repository:\nhttps://github.com/yrtsv/CORE"
+    "section": "Methodological Workflow",
+    "text": "Methodological Workflow\nCORE implements a six-stage research workflow.\n```text Raw Data ↓ Data Acquisition ↓ Data Preparation ↓ Entity Resolution ↓ Expert Validation ↓ Knowledge Preservation ↓ Analysis-Ready Outputs"
   },
   {
     "objectID": "architecture.html",
     "href": "architecture.html",
     "title": "Architecture",
     "section": "",
-    "text": "Documentation under development."
+    "text": "CORE was designed as a research software framework rather than a conventional matching library.\nConsequently, architectural decisions within CORE are driven primarily by methodological requirements rather than software engineering considerations alone.\nThe objective of the framework is not simply to maximise matching performance. Instead, the architecture seeks to support:\n\ntransparency;\nreviewability;\nreproducibility;\ncumulative scientific knowledge.\n\nSoftware implementation therefore serves the scientific process rather than defining it."
+  },
+  {
+    "objectID": "architecture.html#methodology-drives-architecture",
+    "href": "architecture.html#methodology-drives-architecture",
+    "title": "Architecture",
+    "section": "",
+    "text": "CORE was designed as a research software framework rather than a conventional matching library.\nConsequently, architectural decisions within CORE are driven primarily by methodological requirements rather than software engineering considerations alone.\nThe objective of the framework is not simply to maximise matching performance. Instead, the architecture seeks to support:\n\ntransparency;\nreviewability;\nreproducibility;\ncumulative scientific knowledge.\n\nSoftware implementation therefore serves the scientific process rather than defining it."
+  },
+  {
+    "objectID": "architecture.html#passive-learning",
+    "href": "architecture.html#passive-learning",
+    "title": "Architecture",
+    "section": "Passive Learning",
+    "text": "Passive Learning\nValidated decisions are preserved but do not influence computational procedures."
+  },
+  {
+    "objectID": "architecture.html#consensus-learning",
+    "href": "architecture.html#consensus-learning",
+    "title": "Architecture",
+    "section": "Consensus Learning",
+    "text": "Consensus Learning\nKnowledge becomes eligible for methodological influence only after sufficient independent validation has accumulated."
+  },
+  {
+    "objectID": "architecture.html#soft-learning",
+    "href": "architecture.html#soft-learning",
+    "title": "Architecture",
+    "section": "Soft Learning",
+    "text": "Soft Learning\nValidated knowledge influences future workflows through transparent score adjustments and review prioritisation rather than automatic decisions."
+  },
+  {
+    "objectID": "architecture.html#separation-of-responsibilities",
+    "href": "architecture.html#separation-of-responsibilities",
+    "title": "Architecture",
+    "section": "Separation of Responsibilities",
+    "text": "Separation of Responsibilities\nEach module performs a single methodological responsibility."
+  },
+  {
+    "objectID": "architecture.html#transparency",
+    "href": "architecture.html#transparency",
+    "title": "Architecture",
+    "section": "Transparency",
+    "text": "Transparency\nIntermediate outputs remain available throughout the workflow."
+  },
+  {
+    "objectID": "architecture.html#reviewability",
+    "href": "architecture.html#reviewability",
+    "title": "Architecture",
+    "section": "Reviewability",
+    "text": "Reviewability\nScientific judgement remains an explicit component of the architecture."
+  },
+  {
+    "objectID": "architecture.html#reproducibility",
+    "href": "architecture.html#reproducibility",
+    "title": "Architecture",
+    "section": "Reproducibility",
+    "text": "Reproducibility\nThe same workflow produces reproducible results across projects and datasets."
+  },
+  {
+    "objectID": "architecture.html#cumulative-knowledge",
+    "href": "architecture.html#cumulative-knowledge",
+    "title": "Architecture",
+    "section": "Cumulative Knowledge",
+    "text": "Cumulative Knowledge\nValidated scientific knowledge remains available for future investigations."
+  },
+  {
+    "objectID": "demo.html",
+    "href": "demo.html",
+    "title": "CORE Demonstrator",
+    "section": "",
+    "text": "The CORE Demonstrator provides an interactive environment for exploring the methodology and workflow implemented by CORE.\nThe current demonstrator includes:\n\ncandidate generation;\nconfidence scoring;\nreview queue management;\nexpert validation;\nreview history display;\nexport of reviewed decisions.\n\nThe objective of the demonstrator is not to replace the full CORE framework, but to provide researchers with a transparent and accessible environment for understanding the methodological principles underlying the project."
+  },
+  {
+    "objectID": "demo.html#interactive-core-demonstrator",
+    "href": "demo.html#interactive-core-demonstrator",
+    "title": "CORE Demonstrator",
+    "section": "",
+    "text": "The CORE Demonstrator provides an interactive environment for exploring the methodology and workflow implemented by CORE.\nThe current demonstrator includes:\n\ncandidate generation;\nconfidence scoring;\nreview queue management;\nexpert validation;\nreview history display;\nexport of reviewed decisions.\n\nThe objective of the demonstrator is not to replace the full CORE framework, but to provide researchers with a transparent and accessible environment for understanding the methodological principles underlying the project."
+  },
+  {
+    "objectID": "demo.html#launch-demonstrator",
+    "href": "demo.html#launch-demonstrator",
+    "title": "CORE Demonstrator",
+    "section": "Launch Demonstrator",
+    "text": "Launch Demonstrator\n\n\n\n\n\n\nTipLive Demonstrator\n\n\n\nThe public demonstrator will become available following deployment of the first public release.\nCurrent status: Under development."
+  },
+  {
+    "objectID": "demo.html#planned-capabilities",
+    "href": "demo.html#planned-capabilities",
+    "title": "CORE Demonstrator",
+    "section": "Planned Capabilities",
+    "text": "Planned Capabilities\nFuture versions of the demonstrator are expected to support:\n\nupload of employer datasets;\nupload of reference datasets;\ninteractive review workflows;\ndiagnostics and explainability outputs;\npublic demonstration workflows;\nbenchmarking examples."
+  },
+  {
+    "objectID": "demo.html#relationship-with-the-core-framework",
+    "href": "demo.html#relationship-with-the-core-framework",
+    "title": "CORE Demonstrator",
+    "section": "Relationship with the CORE Framework",
+    "text": "Relationship with the CORE Framework\nThe demonstrator represents an interactive interface built on top of the methodological architecture implemented within CORE.\nIt therefore provides an accessible introduction to:\n\nthe Entity Resolution Engine;\nthe Review Queue;\nthe Learning Layer;\nvalidated decision preservation.\n\nResearchers interested in the full framework should consult the documentation website and GitHub repository."
+  },
+  {
+    "objectID": "demo.html#current-development-status",
+    "href": "demo.html#current-development-status",
+    "title": "CORE Demonstrator",
+    "section": "Current Development Status",
+    "text": "Current Development Status\nThe demonstrator currently supports:\n\ndemonstration mode using bundled example datasets;\nresearch mode using user-provided datasets;\nreview queue interaction;\ndiagnostics inspection;\nvalidated review history display.\n\nPublic deployment is planned as part of the CORE v1.0 release roadmap."
   },
   {
     "objectID": "installation.html",
     "href": "installation.html",
     "title": "Installation",
     "section": "",
-    "text": "Documentation under development."
+    "text": "This page explains how to install and configure CORE.\nCORE is distributed as an open-source research software framework and can be installed directly from the GitHub repository.\n\n\nRequirements\nCORE currently requires:\n\nR (&gt;= 4.3 recommended)\nRStudio (recommended)\nGit\nInternet access for package installation\n\nThe framework has been developed and tested on Windows, Linux, and macOS.\n\n\n\nStep 1 — Clone the Repository\nClone the repository from GitHub:\n```bash git clone https://github.com/yrtsv/CORE.git"
   },
   {
     "objectID": "news.html",
     "href": "news.html",
     "title": "News",
     "section": "",
-    "text": "Documentation under development."
+    "text": "This page summarises major developments, releases, and milestones in the evolution of CORE.\nCORE is developed as research software and therefore evolves through both methodological and technical improvements."
+  },
+  {
+    "objectID": "news.html#major-features",
+    "href": "news.html#major-features",
+    "title": "News",
+    "section": "Major Features",
+    "text": "Major Features\n\nEntity Resolution Engine\n\nExact matching\nSuffix normalisation\nAlias resolution\nCandidate generation\nSimilarity scoring\n\n\n\nReview Queue\n\nTransparent expert review\nExplicit uncertainty preservation\nHuman validation workflow\nReview decision export\n\n\n\nLearning Layer Infrastructure\n\nPersistent knowledge storage\nLearning dictionary support\nReviewer metadata preservation\nKnowledge continuity infrastructure\n\n\n\nDictionary Infrastructure\n\nCore dictionaries\nProject dictionaries\nCommunity dictionaries\nCustom dictionaries\n\n\n\nDocumentation\n\nPhilosophy\nArchitecture\nWorkflow\nMethodology\nReview Queue\nLearning Layer\n\n\n\nResearch Software Infrastructure\n\nGitHub repository\nSoftware audit\nIntegration testing\nDocumentation website"
+  },
+  {
+    "objectID": "news.html#public-demonstrator-deployment",
+    "href": "news.html#public-demonstrator-deployment",
+    "title": "News",
+    "section": "Public Demonstrator Deployment",
+    "text": "Public Demonstrator Deployment\nDeployment of the Shiny demonstrator for public access."
+  },
+  {
+    "objectID": "news.html#community-dictionary-ecosystem",
+    "href": "news.html#community-dictionary-ecosystem",
+    "title": "News",
+    "section": "Community Dictionary Ecosystem",
+    "text": "Community Dictionary Ecosystem\nSupport for reusable and community-maintained dictionaries."
+  },
+  {
+    "objectID": "news.html#consensus-learning",
+    "href": "news.html#consensus-learning",
+    "title": "News",
+    "section": "Consensus Learning",
+    "text": "Consensus Learning\nDevelopment of consensus-based activation mechanisms for preserved scientific knowledge."
+  },
+  {
+    "objectID": "news.html#soft-learning",
+    "href": "news.html#soft-learning",
+    "title": "News",
+    "section": "Soft Learning",
+    "text": "Soft Learning\nIntegration of validated knowledge through score adjustments and review prioritisation."
+  },
+  {
+    "objectID": "news.html#large-scale-benchmarking",
+    "href": "news.html#large-scale-benchmarking",
+    "title": "News",
+    "section": "Large-Scale Benchmarking",
+    "text": "Large-Scale Benchmarking\nPerformance evaluation across multiple domains and large datasets."
+  },
+  {
+    "objectID": "news.html#core-v1.1",
+    "href": "news.html#core-v1.1",
+    "title": "News",
+    "section": "CORE v1.1",
+    "text": "CORE v1.1\n\nPublic demonstrator deployment\nImproved user experience\nCommunity documentation"
+  },
+  {
+    "objectID": "news.html#core-v1.2",
+    "href": "news.html#core-v1.2",
+    "title": "News",
+    "section": "CORE v1.2",
+    "text": "CORE v1.2\n\nConsensus learning infrastructure\nCollaborative review workflows"
+  },
+  {
+    "objectID": "news.html#core-v1.3",
+    "href": "news.html#core-v1.3",
+    "title": "News",
+    "section": "CORE v1.3",
+    "text": "CORE v1.3\n\nSoft learning integration\nKnowledge-aware scoring\n\n\nFor a complete technical change history please consult:\n\nNEWS.md\nGitHub Releases\nRepository commit history"
   },
   {
     "objectID": "tutorials.html",
     "href": "tutorials.html",
     "title": "Tutorials",
     "section": "",
-    "text": "Documentation under development."
+    "text": "This section provides practical examples demonstrating how CORE can be used within empirical research workflows.\nThe objective of these tutorials is not only to explain how the software operates, but also to illustrate the methodological principles underlying transparent and reproducible entity resolution.\n\n\nTutorial 1 — Running the CORE Demonstrator\nThe easiest way to explore CORE is through the interactive Shiny demonstrator.\nStart the application from the project root directory:\n```r options(shiny.launch.browser = TRUE)\nshiny::runApp( appDir = “app”, host = “127.0.0.1”, port = 3838, launch.browser = TRUE )"
   }
 ]

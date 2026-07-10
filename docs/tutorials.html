@@ -42,7 +42,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-e9072c35d400738dd8f5400c9614cb45.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-661d3141088f8644463b6179fa03ec3d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -120,8 +120,16 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Tutorials</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./demo.html"> 
+<span class="menu-text">Demonstrator</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./news.html"> 
 <span class="menu-text">News</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://github.com/yrtsv/CORE/issues"> 
+<span class="menu-text">Feedback</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -141,8 +149,14 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#tutorial-1-running-the-core-demonstrator" id="toc-tutorial-1-running-the-core-demonstrator" class="nav-link active" data-scroll-target="#tutorial-1-running-the-core-demonstrator">Tutorial 1 — Running the CORE Demonstrator</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -166,9 +180,18 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Documentation under development.</p>
+<p>This section provides practical examples demonstrating how CORE can be used within empirical research workflows.</p>
+<p>The objective of these tutorials is not only to explain how the software operates, but also to illustrate the methodological principles underlying transparent and reproducible entity resolution.</p>
+<hr>
+<section id="tutorial-1-running-the-core-demonstrator" class="level1">
+<h1>Tutorial 1 — Running the CORE Demonstrator</h1>
+<p>The easiest way to explore CORE is through the interactive Shiny demonstrator.</p>
+<p>Start the application from the project root directory:</p>
+<p>```r options(shiny.launch.browser = TRUE)</p>
+<p>shiny::runApp( appDir = “app”, host = “127.0.0.1”, port = 3838, launch.browser = TRUE )</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

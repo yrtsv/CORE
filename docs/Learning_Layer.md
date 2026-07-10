@@ -58,6 +58,44 @@ This approach allows knowledge to evolve through continued scientific scrutiny r
 
 ---
 
+## Learning Activation
+
+Knowledge preserved within the Learning Layer does not automatically influence future entity resolution decisions.
+
+A single expert decision may contain errors, reflect project-specific assumptions, or represent an interpretation that later evidence may challenge. Preserved knowledge therefore enters the Learning Layer as documented scientific evidence rather than as immediately actionable rules.
+
+CORE currently distinguishes three stages of knowledge integration.
+
+### Passive Learning
+
+Validated decisions are preserved for future reference but do not influence computational procedures.
+
+The objective of Passive Learning is scientific continuity rather than methodological adaptation. Preserved knowledge remains available for inspection, discussion, and future evaluation while computational workflows continue to operate independently from previously reviewed decisions.
+
+This stage establishes the scientific memory of the framework without introducing the risk that isolated errors or project-specific interpretations influence future investigations.
+
+### Consensus Learning
+
+Preserved decisions become eligible for methodological influence only after sufficient independent scientific validation has accumulated.
+
+The purpose of Consensus Learning is to distinguish broadly supported scientific judgement from isolated observations or individual reviewer errors. Knowledge enters this stage only after multiple independent evaluations produce consistent conclusions regarding a correspondence.
+
+Consensus thresholds may vary across projects and research domains, but the underlying principle remains constant: scientific knowledge should influence future workflows only after adequate validation has emerged.
+
+### Soft Learning
+
+Validated knowledge influences future workflows through transparent adjustments to similarity assessment or review prioritisation rather than through automatic acceptance or rejection of correspondences.
+
+Examples may include increasing confidence scores for repeatedly validated correspondences, reducing confidence scores for repeatedly rejected candidates, or modifying review priorities to focus expert attention on genuinely uncertain observations.
+
+Importantly, Soft Learning does not replace scientific judgement. Final decisions remain subject to expert review and remain open to future refinement whenever new evidence becomes available.
+
+This staged approach ensures that scientific knowledge remains cumulative while protecting future investigations from isolated errors, accidental reviewer decisions, or premature methodological conclusions.
+
+Knowledge preserved within the Learning Layer therefore evolves gradually through continued scientific scrutiny rather than immediate algorithmic adoption.
+
+---
+
 ## Design Principles
 
 The Learning Layer has been designed around four methodological principles.

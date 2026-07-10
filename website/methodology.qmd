@@ -1,4 +1,195 @@
 ---
 title: "Methodology"
+toc: true
 ---
-Documentation under development.
+## Entity Resolution as Research Methodology
+
+CORE approaches entity resolution as a scientific methodology rather than as a standalone matching algorithm.
+
+The framework integrates computational procedures, scientific judgement, expert review, and knowledge preservation into a coherent methodological system that supports transparent and reproducible empirical research.
+
+From this perspective, entity resolution extends beyond identifying correspondences between records.
+
+It includes:
+
+- data preparation;
+- computational evaluation;
+- expert review;
+- knowledge preservation;
+- production of analysis-ready datasets.
+
+Each of these activities contributes to the scientific validity of empirical research.
+
+---
+
+# Purpose
+
+CORE was developed to support empirical research by combining computational efficiency with transparent scientific judgement.
+
+The objective is not simply to maximise matching performance.
+
+Instead, the framework seeks to ensure that entity resolution decisions become:
+
+- explicit;
+- reproducible;
+- reviewable;
+- reusable;
+- scientifically accountable.
+
+Entity resolution therefore becomes a documented component of the research process rather than an undocumented preprocessing task.
+
+---
+
+# Methodological Principles
+
+CORE is built around five methodological principles.
+
+## Transparency
+
+Every important methodological decision remains observable and open to scientific inspection.
+
+Researchers are able to inspect intermediate outputs, review decisions, and understand how final correspondences were established.
+
+---
+
+## Scientific Judgement
+
+Computational procedures support expert reasoning but do not replace it whenever uncertainty remains.
+
+Scientific judgement therefore remains an explicit component of the framework rather than an undocumented correction performed outside the software.
+
+---
+
+## Reproducibility
+
+Entity resolution decisions are documented in a manner that allows independent verification and future replication.
+
+Reproducibility within CORE extends beyond producing identical analytical datasets.
+
+The framework seeks to preserve the reasoning through which those datasets were constructed.
+
+---
+
+## Knowledge Preservation
+
+Validated scientific judgement is preserved beyond individual projects so that future investigations may benefit from previous empirical evaluation.
+
+Knowledge generated during entity resolution therefore becomes a reusable scientific asset rather than a temporary by-product of data preparation.
+
+---
+
+## Methodological Continuity
+
+Entity resolution is regarded as a cumulative research activity in which validated knowledge contributes to successive investigations rather than being repeatedly reconstructed.
+
+Scientific knowledge therefore accumulates across projects rather than disappearing at the conclusion of individual studies.
+
+---
+
+# Computational Evidence and Scientific Judgement
+
+CORE combines computational evidence with scientific judgement.
+
+Neither component alone is sufficient for reliable entity resolution in all circumstances.
+
+The framework therefore integrates:
+
+```text
+Computational Evidence
+            +
+Scientific Judgement
+            +
+Knowledge Preservation
+            ↓
+Transparent Entity Resolution
+```
+
+Computational procedures provide consistency and scalability.
+
+Scientific judgement provides contextual understanding and methodological interpretation.
+
+Knowledge preservation ensures that validated conclusions remain available for future empirical research.
+
+---
+
+# Reproducibility
+
+Within CORE, reproducibility extends beyond obtaining identical analytical datasets.
+
+The methodology seeks to preserve the reasoning through which entity resolution decisions are established, allowing future researchers to inspect, evaluate, and reproduce the methodological process itself.
+
+Computational procedures contribute reproducibility by applying consistent rules across observations.
+
+Scientific judgement contributes reproducibility by remaining documented, transparent, and open to future evaluation.
+
+Reproducibility is therefore understood as the ability to reconstruct both analytical outputs and the methodological pathway through which those outputs were produced.
+
+---
+
+# Scientific Outputs
+
+The primary output of CORE is not limited to an analysis-ready dataset.
+
+The methodology produces multiple forms of scientific output, including:
+
+- validated entity resolution decisions;
+- documented expert judgement;
+- preserved methodological evidence;
+- reusable scientific knowledge;
+- reproducible analytical workflows.
+
+These outputs complement the analytical dataset by providing transparency regarding how empirical observations have been interpreted and connected.
+
+Consequently, entity resolution becomes a documented research activity whose methodological products remain available for future scientific investigation rather than disappearing at the conclusion of individual projects.
+
+---
+
+# Learning Philosophy
+
+Knowledge preserved through the Learning Layer does not automatically influence future workflows.
+
+A single reviewer may make mistakes.
+
+Project-specific assumptions may later prove incorrect.
+
+New evidence may challenge earlier conclusions.
+
+CORE therefore distinguishes three stages of knowledge integration.
+
+## Passive Learning
+
+Validated decisions are preserved but do not influence computational procedures.
+
+## Consensus Learning
+
+Knowledge becomes eligible for methodological influence only after sufficient independent scientific validation has accumulated.
+
+## Soft Learning
+
+Validated knowledge influences future workflows through transparent score adjustments and review prioritisation rather than automatic acceptance or rejection.
+
+This approach protects future investigations from isolated reviewer errors while preserving the cumulative development of scientific knowledge.
+
+---
+
+# Methodological Perspective
+
+CORE approaches entity resolution as a scientific methodology rather than as a standalone computational task.
+
+The framework integrates computational procedures, scientific judgement, expert review, and knowledge preservation into a coherent methodological system that supports transparent and reproducible empirical research.
+
+Each component contributes a distinct responsibility, while together they establish a continuous process through which uncertainty is evaluated, knowledge is validated, and scientific understanding is preserved.
+
+From this perspective, the purpose of entity resolution extends beyond constructing analytical datasets.
+
+It becomes a process through which empirical knowledge is generated, documented, preserved, and made available for future research.
+
+---
+
+# Final Principle
+
+> Entity resolution does not merely produce analytical datasets.
+>
+> It produces scientific knowledge.
+
+The methodology implemented within CORE has been designed around this principle.

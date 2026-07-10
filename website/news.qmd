@@ -1,4 +1,184 @@
 ---
 title: "News"
+toc: true
 ---
-Documentation under development.
+This page summarises major developments, releases, and milestones in the evolution of CORE.
+
+CORE is developed as research software and therefore evolves through both methodological and technical improvements.
+
+---
+
+# CORE v1.0.0 — First Stable Release
+
+**Status:** Stable Release
+
+CORE v1.0.0 represents the first stable public release of the Corporate Entity Resolution Engine.
+
+This release establishes the methodological and architectural foundations of the framework and marks the transition from prototype development to research software infrastructure.
+
+## Major Features
+
+### Entity Resolution Engine
+
+- Exact matching
+- Suffix normalisation
+- Alias resolution
+- Candidate generation
+- Similarity scoring
+
+### Review Queue
+
+- Transparent expert review
+- Explicit uncertainty preservation
+- Human validation workflow
+- Review decision export
+
+### Learning Layer Infrastructure
+
+- Persistent knowledge storage
+- Learning dictionary support
+- Reviewer metadata preservation
+- Knowledge continuity infrastructure
+
+### Dictionary Infrastructure
+
+- Core dictionaries
+- Project dictionaries
+- Community dictionaries
+- Custom dictionaries
+
+### Documentation
+
+- Philosophy
+- Architecture
+- Workflow
+- Methodology
+- Review Queue
+- Learning Layer
+
+### Research Software Infrastructure
+
+- GitHub repository
+- Software audit
+- Integration testing
+- Documentation website
+
+---
+
+# CORE v1.0.1 — Documentation Website
+
+**Status:** Completed
+
+This release introduced the first public documentation website built with Quarto.
+
+Major additions included:
+
+- landing page
+- methodological documentation
+- tutorials
+- installation guidance
+- release tracking
+
+---
+
+# CORE v1.0.2 — Interactive Demonstrator
+
+**Status:** Completed
+
+This release introduced the first interactive Shiny demonstrator running the real CORE pipeline.
+
+Features include:
+
+- demonstration mode
+- research mode
+- interactive review queue
+- diagnostics panel
+- review decisions
+- learning integration
+- decision export
+
+Importantly, the demonstrator executes the actual CORE workflow rather than a simplified example implementation.
+
+---
+
+# Current Development Priorities
+
+Current priorities focus on expanding the surrounding research software ecosystem rather than redesigning the matching engine.
+
+## Public Demonstrator Deployment
+
+Deployment of the Shiny demonstrator for public access.
+
+## Community Dictionary Ecosystem
+
+Support for reusable and community-maintained dictionaries.
+
+## Consensus Learning
+
+Development of consensus-based activation mechanisms for preserved scientific knowledge.
+
+## Soft Learning
+
+Integration of validated knowledge through score adjustments and review prioritisation.
+
+## Large-Scale Benchmarking
+
+Performance evaluation across multiple domains and large datasets.
+
+---
+
+# Long-Term Vision
+
+The long-term objective of CORE extends beyond entity resolution algorithms.
+
+The project aims to become a complete research software platform supporting:
+
+- transparent workflows;
+- reviewable scientific judgement;
+- reproducible empirical research;
+- cumulative scientific knowledge.
+
+Future development areas include:
+
+- collaborative review workflows;
+- community-maintained knowledge bases;
+- cross-domain entity resolution;
+- open scientific infrastructure.
+
+---
+
+# Release Philosophy
+
+CORE follows a methodology-first development philosophy.
+
+Major releases correspond to meaningful methodological or architectural milestones rather than isolated software features.
+
+The objective is not merely to add functionality, but to strengthen the framework's contribution to transparent and reproducible empirical research.
+
+---
+
+# Upcoming Releases
+
+## CORE v1.1
+
+- Public demonstrator deployment
+- Improved user experience
+- Community documentation
+
+## CORE v1.2
+
+- Consensus learning infrastructure
+- Collaborative review workflows
+
+## CORE v1.3
+
+- Soft learning integration
+- Knowledge-aware scoring
+
+---
+
+For a complete technical change history please consult:
+
+- `NEWS.md`
+- GitHub Releases
+- Repository commit history

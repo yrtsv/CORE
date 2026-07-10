@@ -42,7 +42,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-e9072c35d400738dd8f5400c9614cb45.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-661d3141088f8644463b6179fa03ec3d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -120,8 +120,16 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Tutorials</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./demo.html"> 
+<span class="menu-text">Demonstrator</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./news.html"> 
 <span class="menu-text">News</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://github.com/yrtsv/CORE/issues"> 
+<span class="menu-text">Feedback</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -141,8 +149,37 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#methodology-drives-architecture" id="toc-methodology-drives-architecture" class="nav-link active" data-scroll-target="#methodology-drives-architecture">Methodology Drives Architecture</a></li>
+  <li><a href="#layered-architecture" id="toc-layered-architecture" class="nav-link" data-scroll-target="#layered-architecture">Layered Architecture</a></li>
+  <li><a href="#input-layer" id="toc-input-layer" class="nav-link" data-scroll-target="#input-layer">Input Layer</a></li>
+  <li><a href="#preparation-layer" id="toc-preparation-layer" class="nav-link" data-scroll-target="#preparation-layer">Preparation Layer</a></li>
+  <li><a href="#resolution-layer" id="toc-resolution-layer" class="nav-link" data-scroll-target="#resolution-layer">Resolution Layer</a></li>
+  <li><a href="#validation-layer" id="toc-validation-layer" class="nav-link" data-scroll-target="#validation-layer">Validation Layer</a></li>
+  <li><a href="#knowledge-layer" id="toc-knowledge-layer" class="nav-link" data-scroll-target="#knowledge-layer">Knowledge Layer</a>
+  <ul class="collapse">
+  <li><a href="#passive-learning" id="toc-passive-learning" class="nav-link" data-scroll-target="#passive-learning">Passive Learning</a></li>
+  <li><a href="#consensus-learning" id="toc-consensus-learning" class="nav-link" data-scroll-target="#consensus-learning">Consensus Learning</a></li>
+  <li><a href="#soft-learning" id="toc-soft-learning" class="nav-link" data-scroll-target="#soft-learning">Soft Learning</a></li>
+  </ul></li>
+  <li><a href="#output-layer" id="toc-output-layer" class="nav-link" data-scroll-target="#output-layer">Output Layer</a></li>
+  <li><a href="#module-structure" id="toc-module-structure" class="nav-link" data-scroll-target="#module-structure">Module Structure</a></li>
+  <li><a href="#architectural-principles" id="toc-architectural-principles" class="nav-link" data-scroll-target="#architectural-principles">Architectural Principles</a>
+  <ul class="collapse">
+  <li><a href="#separation-of-responsibilities" id="toc-separation-of-responsibilities" class="nav-link" data-scroll-target="#separation-of-responsibilities">Separation of Responsibilities</a></li>
+  <li><a href="#transparency" id="toc-transparency" class="nav-link" data-scroll-target="#transparency">Transparency</a></li>
+  <li><a href="#reviewability" id="toc-reviewability" class="nav-link" data-scroll-target="#reviewability">Reviewability</a></li>
+  <li><a href="#reproducibility" id="toc-reproducibility" class="nav-link" data-scroll-target="#reproducibility">Reproducibility</a></li>
+  <li><a href="#cumulative-knowledge" id="toc-cumulative-knowledge" class="nav-link" data-scroll-target="#cumulative-knowledge">Cumulative Knowledge</a></li>
+  </ul></li>
+  <li><a href="#why-this-architecture" id="toc-why-this-architecture" class="nav-link" data-scroll-target="#why-this-architecture">Why This Architecture?</a></li>
+  <li><a href="#final-principle" id="toc-final-principle" class="nav-link" data-scroll-target="#final-principle">Final Principle</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -166,9 +203,199 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Documentation under development.</p>
+<section id="methodology-drives-architecture" class="level2">
+<h2 class="anchored" data-anchor-id="methodology-drives-architecture">Methodology Drives Architecture</h2>
+<p>CORE was designed as a research software framework rather than a conventional matching library.</p>
+<p>Consequently, architectural decisions within CORE are driven primarily by methodological requirements rather than software engineering considerations alone.</p>
+<p>The objective of the framework is not simply to maximise matching performance. Instead, the architecture seeks to support:</p>
+<ul>
+<li>transparency;</li>
+<li>reviewability;</li>
+<li>reproducibility;</li>
+<li>cumulative scientific knowledge.</li>
+</ul>
+<p>Software implementation therefore serves the scientific process rather than defining it.</p>
+<hr>
+</section>
+<section id="layered-architecture" class="level1">
+<h1>Layered Architecture</h1>
+<p>CORE follows a layered architecture in which each stage performs a distinct methodological responsibility.</p>
+<pre class="text"><code>Input Layer
+     ↓
+Preparation Layer
+     ↓
+Resolution Layer
+     ↓
+Validation Layer
+     ↓
+Knowledge Layer
+     ↓
+Output Layer</code></pre>
+<p>This separation ensures that intermediate outputs remain observable, reproducible, and independently testable throughout the workflow.</p>
+<hr>
+</section>
+<section id="input-layer" class="level1">
+<h1>Input Layer</h1>
+<p>The Input Layer is responsible for importing all resources required for entity resolution.</p>
+<p>Typical inputs include:</p>
+<ul>
+<li>employer datasets;</li>
+<li>reference datasets;</li>
+<li>project dictionaries;</li>
+<li>community dictionaries;</li>
+<li>configuration files.</li>
+</ul>
+<p>The objective of this layer is reproducibility rather than transformation.</p>
+<p>Raw data remain unchanged throughout the workflow.</p>
+<hr>
+</section>
+<section id="preparation-layer" class="level1">
+<h1>Preparation Layer</h1>
+<p>The Preparation Layer standardises observations before matching begins.</p>
+<p>Typical operations include:</p>
+<ul>
+<li>text normalisation;</li>
+<li>tokenisation;</li>
+<li>suffix preparation;</li>
+<li>alias preparation;</li>
+<li>reference preparation.</li>
+</ul>
+<p>Importantly, this stage does not attempt to establish correspondences between entities.</p>
+<p>Its responsibility is to reduce avoidable technical variation while preserving scientific meaning.</p>
+<hr>
+</section>
+<section id="resolution-layer" class="level1">
+<h1>Resolution Layer</h1>
+<p>The Resolution Layer forms the computational core of CORE.</p>
+<p>Entity resolution is performed through multiple independent operations including:</p>
+<ul>
+<li>exact matching;</li>
+<li>suffix normalisation;</li>
+<li>alias resolution;</li>
+<li>candidate generation;</li>
+<li>similarity assessment.</li>
+</ul>
+<p>Each component contributes a different form of computational evidence regarding potential correspondences.</p>
+<p>This approach reduces dependence upon any individual matching strategy.</p>
+<hr>
+</section>
+<section id="validation-layer" class="level1">
+<h1>Validation Layer</h1>
+<p>The Validation Layer manages uncertainty.</p>
+<p>Candidate correspondences for which computational evidence remains insufficient are transferred to the Review Queue where scientific judgement complements algorithmic evidence.</p>
+<p>The framework deliberately preserves uncertainty whenever reliable conclusions cannot be established computationally.</p>
+<p>The objective is scientific reliability rather than maximum automation.</p>
+<hr>
+</section>
+<section id="knowledge-layer" class="level1">
+<h1>Knowledge Layer</h1>
+<p>The Knowledge Layer preserves validated scientific judgement through the Learning Layer.</p>
+<p>Knowledge preservation should not be interpreted as autonomous learning.</p>
+<p>Instead, validated expert decisions become reusable scientific knowledge that remains available for future investigation and methodological continuity.</p>
+<p>CORE currently distinguishes three stages of knowledge integration:</p>
+<section id="passive-learning" class="level2">
+<h2 class="anchored" data-anchor-id="passive-learning">Passive Learning</h2>
+<p>Validated decisions are preserved but do not influence computational procedures.</p>
+</section>
+<section id="consensus-learning" class="level2">
+<h2 class="anchored" data-anchor-id="consensus-learning">Consensus Learning</h2>
+<p>Knowledge becomes eligible for methodological influence only after sufficient independent validation has accumulated.</p>
+</section>
+<section id="soft-learning" class="level2">
+<h2 class="anchored" data-anchor-id="soft-learning">Soft Learning</h2>
+<p>Validated knowledge influences future workflows through transparent score adjustments and review prioritisation rather than automatic decisions.</p>
+<hr>
+</section>
+</section>
+<section id="output-layer" class="level1">
+<h1>Output Layer</h1>
+<p>The Output Layer generates both analysis-ready datasets and methodological evidence.</p>
+<p>Typical outputs include:</p>
+<ul>
+<li>matched datasets;</li>
+<li>review decisions;</li>
+<li>learning dictionaries;</li>
+<li>diagnostics;</li>
+<li>intermediate outputs.</li>
+</ul>
+<p>The framework therefore preserves not only analytical results but also the reasoning that supports them.</p>
+<hr>
+</section>
+<section id="module-structure" class="level1">
+<h1>Module Structure</h1>
+<p>The current CORE implementation consists of the following major modules.</p>
+<pre class="text"><code>07_clean_names.R
+08_tokenizer.R
+
+10_suffix_engine.R
+11_match_exact.R
+12_alias_engine.R
+13_candidate_generation.R
+14_scoring_engine.R
+
+15_review_queue.R
+16_learning_layer.R
+17_export_results.R
+
+18_run_core.R
+
+23_dictionary_manager.R
+
+24_suffix_utils.R
+25_alias_utils.R
+26_candidate_utils.R
+27_scoring_utils.R</code></pre>
+<p>The modular structure allows components to evolve independently while preserving a stable methodological framework.</p>
+<hr>
+</section>
+<section id="architectural-principles" class="level1">
+<h1>Architectural Principles</h1>
+<p>CORE has been designed around five architectural principles.</p>
+<section id="separation-of-responsibilities" class="level2">
+<h2 class="anchored" data-anchor-id="separation-of-responsibilities">Separation of Responsibilities</h2>
+<p>Each module performs a single methodological responsibility.</p>
+</section>
+<section id="transparency" class="level2">
+<h2 class="anchored" data-anchor-id="transparency">Transparency</h2>
+<p>Intermediate outputs remain available throughout the workflow.</p>
+</section>
+<section id="reviewability" class="level2">
+<h2 class="anchored" data-anchor-id="reviewability">Reviewability</h2>
+<p>Scientific judgement remains an explicit component of the architecture.</p>
+</section>
+<section id="reproducibility" class="level2">
+<h2 class="anchored" data-anchor-id="reproducibility">Reproducibility</h2>
+<p>The same workflow produces reproducible results across projects and datasets.</p>
+</section>
+<section id="cumulative-knowledge" class="level2">
+<h2 class="anchored" data-anchor-id="cumulative-knowledge">Cumulative Knowledge</h2>
+<p>Validated scientific knowledge remains available for future investigations.</p>
+<hr>
+</section>
+</section>
+<section id="why-this-architecture" class="level1">
+<h1>Why This Architecture?</h1>
+<p>Traditional matching systems often prioritise automation and computational efficiency.</p>
+<p>CORE adopts a different perspective.</p>
+<p>The framework prioritises:</p>
+<ul>
+<li>methodological transparency;</li>
+<li>scientific accountability;</li>
+<li>explicit uncertainty management;</li>
+<li>cumulative knowledge preservation.</li>
+</ul>
+<p>From this perspective, software architecture becomes a mechanism for supporting empirical research rather than an objective in itself.</p>
+<hr>
+</section>
+<section id="final-principle" class="level1">
+<h1>Final Principle</h1>
+<blockquote class="blockquote">
+<p>Software implementation serves the scientific process, not the reverse.</p>
+</blockquote>
+<p>This principle defines the architectural philosophy of CORE.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

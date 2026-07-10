@@ -1,0 +1,10 @@
+name: core
+title:
+username: corematch
+account: corematch
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 17598203
+bundleId: 12246629
+url: https://corematch.shinyapps.io/core/
+version: 1
