@@ -181,13 +181,21 @@ ul.task-list li input[type="checkbox"] {
 <p align="center">
 <img src="assets/core_hero_figure.svg" alt="CORE Framework Overview" width="700">
 </p>
-<div style="text-align: center; margin-top: 20px; margin-bottom: 40px;">
-<p style="font-size: 1.15rem; margin-bottom: 18px;">
+<div style="text-align: center; margin-top: 20px; margin-bottom: 50px;">
+<p style="font-size: 1.15rem; margin-bottom: 20px;">
 Try CORE directly in your browser.
 </p>
-<p><a href="https://corematch.shinyapps.io/core/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" style="padding: 14px 28px; font-size: 1.15rem;"></a></p><a href="https://corematch.shinyapps.io/core/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" style="padding: 14px 28px; font-size: 1.15rem;">
-<p>Launch Live Demonstrator</p>
-</a><p><a href="https://corematch.shinyapps.io/core/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" style="padding: 14px 28px; font-size: 1.15rem;"></a></p>
+<p><a href="https://corematch.shinyapps.io/core/" target="_blank" rel="noopener noreferrer" style="
+      display: inline-block;
+      background-color: #2f4159;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 16px 36px;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      line-height: 1.2;
+   "> Launch Live Demonstrator </a></p>
 </div>
 <p>CORE is an open-source research software framework designed to support transparent, reviewable, reproducible, and cumulative entity resolution in empirical research.</p>
 <p>Rather than treating entity resolution as a disposable data-cleaning task, CORE approaches entity resolution as a scientific process in which computational methods, expert judgement, and validated knowledge work together to produce trustworthy analytical datasets.</p>
@@ -283,6 +291,191 @@ Expert Validation
 Knowledge Preservation
     ↓
 Analysis-Ready Outputs</code></pre>
+<p>Unlike conventional matching pipelines, CORE deliberately preserves uncertainty whenever computational evidence alone cannot support reliable scientific conclusions.</p>
+<hr>
+</section>
+<section id="learning-philosophy" class="level2">
+<h2 class="anchored" data-anchor-id="learning-philosophy">Learning Philosophy</h2>
+<p>The CORE Learning Layer preserves validated review decisions without automating judgement.</p>
+<p>It does not:</p>
+<ul>
+<li>rescore candidates;</li>
+<li>modify confidence scores;</li>
+<li>automatically accept matches;</li>
+<li>automatically reject matches;</li>
+<li>override expert judgement.</li>
+</ul>
+<p>Its role is deliberately simple:</p>
+<pre class="text"><code>Preserve review history.
+Do not automate judgement.</code></pre>
+<p>Examples of review history shown to users include:</p>
+<pre class="text"><code>Accepted once before.
+Accepted twice before.
+Rejected once before.
+No previous review history.</code></pre>
+<p>This design protects transparency while allowing validated review knowledge to remain available for future research.</p>
+<hr>
+</section>
+<section id="current-status" class="level2">
+<h2 class="anchored" data-anchor-id="current-status">Current Status</h2>
+<p>CORE v1.0.0 currently includes:</p>
+<ul>
+<li>a stable corporate entity resolution engine;</li>
+<li>a transparent Review Queue;</li>
+<li>validated review-history preservation;</li>
+<li>dictionary management infrastructure;</li>
+<li>a public documentation website;</li>
+<li>an interactive Shiny demonstrator;</li>
+<li>integration and testthat test suites;</li>
+<li>an automated project code audit;</li>
+<li>open-source repository infrastructure.</li>
+</ul>
+<hr>
+</section>
+<section id="explore-core" class="level2">
+<h2 class="anchored" data-anchor-id="explore-core">Explore CORE</h2>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Try CORE Online
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The public demonstrator allows users to explore the Review Queue, inspect match diagnostics, record expert decisions, and view previous review history without installing the software.</p>
+<p><a href="https://corematch.shinyapps.io/core/" target="_blank">Launch the CORE Demonstrator</a></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Source Code
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The complete source code, release history, citation metadata, and contribution guidelines are available in the GitHub repository.</p>
+<p><a href="https://github.com/yrtsv/CORE" target="_blank">View CORE on GitHub</a></p>
+</div>
+</div>
+<hr>
+</section>
+<section id="feedback-and-suggestions" class="level2">
+<h2 class="anchored" data-anchor-id="feedback-and-suggestions">Feedback and Suggestions</h2>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Help Improve CORE
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>CORE is currently in its first public release. Feedback from researchers, data scientists, research software developers, and potential users is highly appreciated.</p>
+<p>Please use GitHub Issues to share:</p>
+<ul>
+<li>bug reports;</li>
+<li>usability suggestions;</li>
+<li>documentation improvements;</li>
+<li>feature requests;</li>
+<li>methodological questions;</li>
+<li>potential research applications.</li>
+</ul>
+<p><a href="https://github.com/yrtsv/CORE/issues/new/choose" target="_blank">Provide Feedback on GitHub</a></p>
+</div>
+</div>
+<p>All public feedback remains visible and traceable through the project’s GitHub Issues page.</p>
+<p><a href="https://github.com/yrtsv/CORE/issues" target="_blank">View Existing Issues</a></p>
+<hr>
+</section>
+<section id="documentation" class="level2">
+<h2 class="anchored" data-anchor-id="documentation">Documentation</h2>
+<p>The documentation website provides complementary material for understanding and using CORE.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Page</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Installation</td>
+<td>Install CORE and launch the demonstrator</td>
+</tr>
+<tr class="even">
+<td>Philosophy</td>
+<td>Scientific motivation and conceptual foundations</td>
+</tr>
+<tr class="odd">
+<td>Architecture</td>
+<td>Software architecture and design principles</td>
+</tr>
+<tr class="even">
+<td>Workflow</td>
+<td>Information flow across the framework</td>
+</tr>
+<tr class="odd">
+<td>Methodology</td>
+<td>Methodological foundations of CORE</td>
+</tr>
+<tr class="even">
+<td>Tutorials</td>
+<td>Practical examples and user workflows</td>
+</tr>
+<tr class="odd">
+<td>Demonstrator</td>
+<td>Information about the interactive application</td>
+</tr>
+<tr class="even">
+<td>News</td>
+<td>Release history and project updates</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="long-term-vision" class="level2">
+<h2 class="anchored" data-anchor-id="long-term-vision">Long-Term Vision</h2>
+<p>The long-term objective of CORE extends beyond individual entity resolution algorithms.</p>
+<p>The project aims to become a complete open research software platform supporting transparent, reviewable, reproducible, and cumulative entity resolution across multiple empirical research domains.</p>
+<p>Future development priorities include:</p>
+<ul>
+<li>additional tutorials and worked examples;</li>
+<li>community-maintained dictionaries;</li>
+<li>large-scale benchmarking;</li>
+<li>collaborative review workflows;</li>
+<li>cross-domain entity resolution;</li>
+<li>continued improvements to documentation and usability.</li>
+</ul>
+<p>These developments will preserve the central CORE principle that expert judgement should remain transparent, documented, and reproducible.</p>
+<hr>
+</section>
+<section id="citation" class="level2">
+<h2 class="anchored" data-anchor-id="citation">Citation</h2>
+<p>If CORE contributes to your research, please cite the software using the citation metadata provided in the repository.</p>
+<p>Citation information is available through:</p>
+<ul>
+<li><code>CITATION.cff</code>;</li>
+<li>the GitHub release page;</li>
+<li>future archived releases and DOI registration.</li>
+</ul>
+<hr>
+</section>
+<section id="public-links" class="level2">
+<h2 class="anchored" data-anchor-id="public-links">Public Links</h2>
+<ul>
+<li><strong>Documentation:</strong> <a href="https://yrtsv.github.io/CORE/" class="uri">https://yrtsv.github.io/CORE/</a></li>
+<li><strong>Live Demonstrator:</strong> <a href="https://corematch.shinyapps.io/core/" class="uri">https://corematch.shinyapps.io/core/</a></li>
+<li><strong>Source Code:</strong> <a href="https://github.com/yrtsv/CORE" class="uri">https://github.com/yrtsv/CORE</a></li>
+<li><strong>Feedback and Issues:</strong> <a href="https://github.com/yrtsv/CORE/issues" class="uri">https://github.com/yrtsv/CORE/issues</a></li>
+<li><strong>Latest Release:</strong> <a href="https://github.com/yrtsv/CORE/releases/latest" class="uri">https://github.com/yrtsv/CORE/releases/latest</a></li>
+</ul>
 
 
 </section>

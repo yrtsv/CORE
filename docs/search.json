@@ -179,14 +179,14 @@
     "href": "index.html",
     "title": "Corporate Entity Resolution Engine (CORE)",
     "section": "",
-    "text": "Entity resolution does not merely produce analytical datasets.\nIt produces scientific knowledge.\n\n\n\n\n\n\nTry CORE directly in your browser.\n\n\nLaunch Live Demonstrator\n\n\nCORE is an open-source research software framework designed to support transparent, reviewable, reproducible, and cumulative entity resolution in empirical research.\nRather than treating entity resolution as a disposable data-cleaning task, CORE approaches entity resolution as a scientific process in which computational methods, expert judgement, and validated knowledge work together to produce trustworthy analytical datasets.\nOriginally developed for corporate entity resolution, CORE has been intentionally designed as a general methodology capable of supporting transparent entity resolution across a broad range of empirical research domains."
+    "text": "Entity resolution does not merely produce analytical datasets.\nIt produces scientific knowledge.\n\n\n\n\n\n\nTry CORE directly in your browser.\n\n Launch Live Demonstrator \n\nCORE is an open-source research software framework designed to support transparent, reviewable, reproducible, and cumulative entity resolution in empirical research.\nRather than treating entity resolution as a disposable data-cleaning task, CORE approaches entity resolution as a scientific process in which computational methods, expert judgement, and validated knowledge work together to produce trustworthy analytical datasets.\nOriginally developed for corporate entity resolution, CORE has been intentionally designed as a general methodology capable of supporting transparent entity resolution across a broad range of empirical research domains."
   },
   {
     "objectID": "index.html#transparent.-reviewable.-reproducible.-cumulative.",
     "href": "index.html#transparent.-reviewable.-reproducible.-cumulative.",
     "title": "Corporate Entity Resolution Engine (CORE)",
     "section": "",
-    "text": "Entity resolution does not merely produce analytical datasets.\nIt produces scientific knowledge.\n\n\n\n\n\n\nTry CORE directly in your browser.\n\n\nLaunch Live Demonstrator\n\n\nCORE is an open-source research software framework designed to support transparent, reviewable, reproducible, and cumulative entity resolution in empirical research.\nRather than treating entity resolution as a disposable data-cleaning task, CORE approaches entity resolution as a scientific process in which computational methods, expert judgement, and validated knowledge work together to produce trustworthy analytical datasets.\nOriginally developed for corporate entity resolution, CORE has been intentionally designed as a general methodology capable of supporting transparent entity resolution across a broad range of empirical research domains."
+    "text": "Entity resolution does not merely produce analytical datasets.\nIt produces scientific knowledge.\n\n\n\n\n\n\nTry CORE directly in your browser.\n\n Launch Live Demonstrator \n\nCORE is an open-source research software framework designed to support transparent, reviewable, reproducible, and cumulative entity resolution in empirical research.\nRather than treating entity resolution as a disposable data-cleaning task, CORE approaches entity resolution as a scientific process in which computational methods, expert judgement, and validated knowledge work together to produce trustworthy analytical datasets.\nOriginally developed for corporate entity resolution, CORE has been intentionally designed as a general methodology capable of supporting transparent entity resolution across a broad range of empirical research domains."
   },
   {
     "objectID": "index.html#why-core",
@@ -214,7 +214,63 @@
     "href": "index.html#methodological-workflow",
     "title": "Corporate Entity Resolution Engine (CORE)",
     "section": "Methodological Workflow",
-    "text": "Methodological Workflow\nCORE implements a six-stage research workflow.\nRaw Data\n    ↓\nData Acquisition\n    ↓\nData Preparation\n    ↓\nEntity Resolution\n    ↓\nExpert Validation\n    ↓\nKnowledge Preservation\n    ↓\nAnalysis-Ready Outputs"
+    "text": "Methodological Workflow\nCORE implements a six-stage research workflow.\nRaw Data\n    ↓\nData Acquisition\n    ↓\nData Preparation\n    ↓\nEntity Resolution\n    ↓\nExpert Validation\n    ↓\nKnowledge Preservation\n    ↓\nAnalysis-Ready Outputs\nUnlike conventional matching pipelines, CORE deliberately preserves uncertainty whenever computational evidence alone cannot support reliable scientific conclusions."
+  },
+  {
+    "objectID": "index.html#learning-philosophy",
+    "href": "index.html#learning-philosophy",
+    "title": "Corporate Entity Resolution Engine (CORE)",
+    "section": "Learning Philosophy",
+    "text": "Learning Philosophy\nThe CORE Learning Layer preserves validated review decisions without automating judgement.\nIt does not:\n\nrescore candidates;\nmodify confidence scores;\nautomatically accept matches;\nautomatically reject matches;\noverride expert judgement.\n\nIts role is deliberately simple:\nPreserve review history.\nDo not automate judgement.\nExamples of review history shown to users include:\nAccepted once before.\nAccepted twice before.\nRejected once before.\nNo previous review history.\nThis design protects transparency while allowing validated review knowledge to remain available for future research."
+  },
+  {
+    "objectID": "index.html#current-status",
+    "href": "index.html#current-status",
+    "title": "Corporate Entity Resolution Engine (CORE)",
+    "section": "Current Status",
+    "text": "Current Status\nCORE v1.0.0 currently includes:\n\na stable corporate entity resolution engine;\na transparent Review Queue;\nvalidated review-history preservation;\ndictionary management infrastructure;\na public documentation website;\nan interactive Shiny demonstrator;\nintegration and testthat test suites;\nan automated project code audit;\nopen-source repository infrastructure."
+  },
+  {
+    "objectID": "index.html#explore-core",
+    "href": "index.html#explore-core",
+    "title": "Corporate Entity Resolution Engine (CORE)",
+    "section": "Explore CORE",
+    "text": "Explore CORE\n\n\n\n\n\n\nTipTry CORE Online\n\n\n\nThe public demonstrator allows users to explore the Review Queue, inspect match diagnostics, record expert decisions, and view previous review history without installing the software.\nLaunch the CORE Demonstrator\n\n\n\n\n\n\n\n\nNoteSource Code\n\n\n\nThe complete source code, release history, citation metadata, and contribution guidelines are available in the GitHub repository.\nView CORE on GitHub"
+  },
+  {
+    "objectID": "index.html#feedback-and-suggestions",
+    "href": "index.html#feedback-and-suggestions",
+    "title": "Corporate Entity Resolution Engine (CORE)",
+    "section": "Feedback and Suggestions",
+    "text": "Feedback and Suggestions\n\n\n\n\n\n\nImportantHelp Improve CORE\n\n\n\nCORE is currently in its first public release. Feedback from researchers, data scientists, research software developers, and potential users is highly appreciated.\nPlease use GitHub Issues to share:\n\nbug reports;\nusability suggestions;\ndocumentation improvements;\nfeature requests;\nmethodological questions;\npotential research applications.\n\nProvide Feedback on GitHub\n\n\nAll public feedback remains visible and traceable through the project’s GitHub Issues page.\nView Existing Issues"
+  },
+  {
+    "objectID": "index.html#documentation",
+    "href": "index.html#documentation",
+    "title": "Corporate Entity Resolution Engine (CORE)",
+    "section": "Documentation",
+    "text": "Documentation\nThe documentation website provides complementary material for understanding and using CORE.\n\n\n\nPage\nPurpose\n\n\n\n\nInstallation\nInstall CORE and launch the demonstrator\n\n\nPhilosophy\nScientific motivation and conceptual foundations\n\n\nArchitecture\nSoftware architecture and design principles\n\n\nWorkflow\nInformation flow across the framework\n\n\nMethodology\nMethodological foundations of CORE\n\n\nTutorials\nPractical examples and user workflows\n\n\nDemonstrator\nInformation about the interactive application\n\n\nNews\nRelease history and project updates"
+  },
+  {
+    "objectID": "index.html#long-term-vision",
+    "href": "index.html#long-term-vision",
+    "title": "Corporate Entity Resolution Engine (CORE)",
+    "section": "Long-Term Vision",
+    "text": "Long-Term Vision\nThe long-term objective of CORE extends beyond individual entity resolution algorithms.\nThe project aims to become a complete open research software platform supporting transparent, reviewable, reproducible, and cumulative entity resolution across multiple empirical research domains.\nFuture development priorities include:\n\nadditional tutorials and worked examples;\ncommunity-maintained dictionaries;\nlarge-scale benchmarking;\ncollaborative review workflows;\ncross-domain entity resolution;\ncontinued improvements to documentation and usability.\n\nThese developments will preserve the central CORE principle that expert judgement should remain transparent, documented, and reproducible."
+  },
+  {
+    "objectID": "index.html#citation",
+    "href": "index.html#citation",
+    "title": "Corporate Entity Resolution Engine (CORE)",
+    "section": "Citation",
+    "text": "Citation\nIf CORE contributes to your research, please cite the software using the citation metadata provided in the repository.\nCitation information is available through:\n\nCITATION.cff;\nthe GitHub release page;\nfuture archived releases and DOI registration."
+  },
+  {
+    "objectID": "index.html#public-links",
+    "href": "index.html#public-links",
+    "title": "Corporate Entity Resolution Engine (CORE)",
+    "section": "Public Links",
+    "text": "Public Links\n\nDocumentation: https://yrtsv.github.io/CORE/\nLive Demonstrator: https://corematch.shinyapps.io/core/\nSource Code: https://github.com/yrtsv/CORE\nFeedback and Issues: https://github.com/yrtsv/CORE/issues\nLatest Release: https://github.com/yrtsv/CORE/releases/latest"
   },
   {
     "objectID": "architecture.html",
@@ -299,13 +355,6 @@
     "title": "CORE Demonstrator",
     "section": "",
     "text": "The CORE Demonstrator provides an interactive environment for exploring the methodology and workflow implemented by CORE.\nThe current demonstrator includes:\n\ncandidate generation;\nconfidence scoring;\nreview queue management;\nexpert validation;\nreview history display;\nexport of reviewed decisions.\n\nThe objective of the demonstrator is not to replace the full CORE framework, but to provide researchers with a transparent and accessible environment for understanding the methodological principles underlying the project."
-  },
-  {
-    "objectID": "demo.html#launch-demonstrator",
-    "href": "demo.html#launch-demonstrator",
-    "title": "CORE Demonstrator",
-    "section": "Launch Demonstrator",
-    "text": "Launch Demonstrator\n\n\n\n\n\n\nTipLive Demonstrator\n\n\n\nThe public demonstrator will become available following deployment of the first public release.\nCurrent status: Under development."
   },
   {
     "objectID": "demo.html#planned-capabilities",

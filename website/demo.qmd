@@ -21,18 +21,6 @@ The objective of the demonstrator is not to replace the full CORE framework, but
 
 ---
 
-## Launch Demonstrator
-
-::: {.callout-tip}
-## Live Demonstrator
-
-The public demonstrator will become available following deployment of the first public release.
-
-**Current status:** Under development.
-:::
-
----
-
 ## Planned Capabilities
 
 Future versions of the demonstrator are expected to support:

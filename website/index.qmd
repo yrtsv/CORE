@@ -16,20 +16,27 @@ toc: false
        width="700">
 </p>
 
-<div style="text-align: center; margin-top: 20px; margin-bottom: 40px;">
+<div style="text-align: center; margin-top: 20px; margin-bottom: 50px;">
 
-<p style="font-size: 1.15rem; margin-bottom: 18px;">
+<p style="font-size: 1.15rem; margin-bottom: 20px;">
 Try CORE directly in your browser.
 </p>
 
 <a href="https://corematch.shinyapps.io/core/"
    target="_blank"
    rel="noopener noreferrer"
-   class="btn btn-primary btn-lg"
-   style="padding: 14px 28px; font-size: 1.15rem;">
-
+   style="
+      display: inline-block;
+      background-color: #2f4159;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 16px 36px;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      line-height: 1.2;
+   ">
 Launch Live Demonstrator
-
 </a>
 
 </div>
@@ -109,3 +116,156 @@ Knowledge Preservation
     ↓
 Analysis-Ready Outputs
 ```
+
+Unlike conventional matching pipelines, CORE deliberately preserves uncertainty whenever computational evidence alone cannot support reliable scientific conclusions.
+
+---
+
+## Learning Philosophy
+
+The CORE Learning Layer preserves validated review decisions without automating judgement.
+
+It does not:
+
+- rescore candidates;
+- modify confidence scores;
+- automatically accept matches;
+- automatically reject matches;
+- override expert judgement.
+
+Its role is deliberately simple:
+
+```text
+Preserve review history.
+Do not automate judgement.
+```
+
+Examples of review history shown to users include:
+
+```text
+Accepted once before.
+Accepted twice before.
+Rejected once before.
+No previous review history.
+```
+
+This design protects transparency while allowing validated review knowledge to remain available for future research.
+
+---
+
+## Current Status
+
+CORE v1.0.0 currently includes:
+
+- a stable corporate entity resolution engine;
+- a transparent Review Queue;
+- validated review-history preservation;
+- dictionary management infrastructure;
+- a public documentation website;
+- an interactive Shiny demonstrator;
+- integration and testthat test suites;
+- an automated project code audit;
+- open-source repository infrastructure.
+
+---
+
+## Explore CORE
+
+::: {.callout-tip}
+## Try CORE Online
+
+The public demonstrator allows users to explore the Review Queue, inspect match diagnostics, record expert decisions, and view previous review history without installing the software.
+
+[Launch the CORE Demonstrator](https://corematch.shinyapps.io/core/){target="_blank"}
+:::
+
+::: {.callout-note}
+## Source Code
+
+The complete source code, release history, citation metadata, and contribution guidelines are available in the GitHub repository.
+
+[View CORE on GitHub](https://github.com/yrtsv/CORE){target="_blank"}
+:::
+
+---
+
+## Feedback and Suggestions
+
+::: {.callout-important}
+## Help Improve CORE
+
+CORE is currently in its first public release. Feedback from researchers, data scientists, research software developers, and potential users is highly appreciated.
+
+Please use GitHub Issues to share:
+
+- bug reports;
+- usability suggestions;
+- documentation improvements;
+- feature requests;
+- methodological questions;
+- potential research applications.
+
+[Provide Feedback on GitHub](https://github.com/yrtsv/CORE/issues/new/choose){target="_blank"}
+:::
+
+All public feedback remains visible and traceable through the project's GitHub Issues page.
+
+[View Existing Issues](https://github.com/yrtsv/CORE/issues){target="_blank"}
+
+---
+
+## Documentation
+
+The documentation website provides complementary material for understanding and using CORE.
+
+| Page | Purpose |
+|------|---------|
+| Installation | Install CORE and launch the demonstrator |
+| Philosophy | Scientific motivation and conceptual foundations |
+| Architecture | Software architecture and design principles |
+| Workflow | Information flow across the framework |
+| Methodology | Methodological foundations of CORE |
+| Tutorials | Practical examples and user workflows |
+| Demonstrator | Information about the interactive application |
+| News | Release history and project updates |
+
+---
+
+## Long-Term Vision
+
+The long-term objective of CORE extends beyond individual entity resolution algorithms.
+
+The project aims to become a complete open research software platform supporting transparent, reviewable, reproducible, and cumulative entity resolution across multiple empirical research domains.
+
+Future development priorities include:
+
+- additional tutorials and worked examples;
+- community-maintained dictionaries;
+- large-scale benchmarking;
+- collaborative review workflows;
+- cross-domain entity resolution;
+- continued improvements to documentation and usability.
+
+These developments will preserve the central CORE principle that expert judgement should remain transparent, documented, and reproducible.
+
+---
+
+## Citation
+
+If CORE contributes to your research, please cite the software using the citation metadata provided in the repository.
+
+Citation information is available through:
+
+- `CITATION.cff`;
+- the GitHub release page;
+- future archived releases and DOI registration.
+
+---
+
+## Public Links
+
+- **Documentation:** <https://yrtsv.github.io/CORE/>
+- **Live Demonstrator:** <https://corematch.shinyapps.io/core/>
+- **Source Code:** <https://github.com/yrtsv/CORE>
+- **Feedback and Issues:** <https://github.com/yrtsv/CORE/issues>
+- **Latest Release:** <https://github.com/yrtsv/CORE/releases/latest>
